@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_2_20_13_28_20" Number_of_Logs="5">
+	<Log Time="20/02/2020 13:27:42" LogString="Object Emitting: Spout" />
+	<Log Time="20/02/2020 13:27:50" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="20/02/2020 13:27:50" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="20/02/2020 13:28:08" LogString="State changed: EmptyCup in to Water" />
+	<Log Time="20/02/2020 13:28:08" LogString="Goal Complete: GoalManager" />
+</LogRoot>

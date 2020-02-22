@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameObjectSchema>
+  <GameObject GameObjectName="Cube">
+    <ComponentList>
+      <Component Type="UnityEngine.BoxCollider">
+        <UnityEngine.BoxCollider center="(0.0, 0.0, 0.0)" size="(1.0, 1.0, 1.0)" extents="(0.5, 0.5, 0.5)" enabled="True" isTrigger="False" contactOffset="0.01" material=" (UnityEngine.PhysicMaterial)" tag="Untagged" name="Cube" hideFlags="None" />
+      </Component>
+    </ComponentList>
+  </GameObject>
