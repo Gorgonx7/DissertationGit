@@ -1,7 +1,0 @@
-﻿//Current Goal: Design a schema that can load an object with a defined model into the engine
-{
-  "ObjectName" :  "HolderName",
-  "ModelLocation": "",
-  "HelpText": "",
-  "SerialisedObjectString" :  ""
-}
