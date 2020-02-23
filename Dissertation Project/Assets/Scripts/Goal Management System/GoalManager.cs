@@ -53,6 +53,6 @@ namespace ACE.Goals
         {
             return GetComponents<Goal>();
         }
-
+      
     }
 }
