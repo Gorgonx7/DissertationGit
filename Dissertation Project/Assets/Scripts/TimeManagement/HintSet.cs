@@ -77,7 +77,15 @@ namespace ACE.TimeManagement
             
             foreach(GameObject i in currentExistingData)
             {
-                i.GetComponent<MeshRenderer>().materials.Append(m_mat);
+                // returns a copy of the current assigned materials
+                Material[] currentMats = i.GetComponent<Renderer>().materials;
+                List<Material> copy = new List<Material>();
+                foreach(Material j in currentMats)
+                {
+                    copy.Add(j);
+                }
+                copy.Add(m_mat);
+                i.GetComponent<Renderer>().materials = copy.ToArray();
             }
         }
         public void stopFlashing()
@@ -88,7 +96,7 @@ namespace ACE.TimeManagement
             {
                 Material[] mats = i.GetComponent<MeshRenderer>().materials;
                 List<Material> originalMat = mats.ToList();
-                originalMat.Remove(m_mat);
+                originalMat.RemoveAt(originalMat.Count - 1);
                 i.GetComponent<MeshRenderer>().materials = originalMat.ToArray();
             }
         }
@@ -107,7 +115,7 @@ namespace ACE.TimeManagement
         }
         public bool effects(GameObject askingObject)
         {
-            return currentExistingData.Contains(askingObject);
+            return m_Data.ExistingHintObjects.Contains(askingObject.name);
         }
     }
 }

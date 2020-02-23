@@ -85,17 +85,18 @@ namespace ACE.Event_System
         void Update()
         {
             List<GameObject> interactedObjects = new List<GameObject>();
-            if (Trigger())
-            {
-                interactionObject.gameObject.SetActive(true);
-                interactedObjects = interactionObject.effectedObjects();
-            }
+           
             if(requiredState != null && requiredState != "")
             {
                 if(!GetComponent<ACE_StateMachine>().hasState(requiredState))
                 {
                     return;
                 }
+            }
+            if (Trigger())
+            {
+                interactionObject.gameObject.SetActive(true);
+                interactedObjects = interactionObject.effectedObjects();
             }
             bool HasInteractedObjectsChanged = false;
             List<GameObject> holder = new List<GameObject>(); ;

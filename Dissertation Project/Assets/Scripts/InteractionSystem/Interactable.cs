@@ -44,7 +44,7 @@ public class Interactable : MonoBehaviour
         if (handNear)
         {
             LogManager.Log("interacted With: " + gameObject.name);
-            if (hintControl.doesCurrentFlashingContain(gameObject))
+            if (hintControl.doesCurrentFlashingContain(gameObject.transform.parent.gameObject))
             {
                 hintControl.ResetFlash();
             }

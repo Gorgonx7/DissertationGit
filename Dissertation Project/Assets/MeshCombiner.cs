@@ -29,16 +29,13 @@ public class MeshCombiner : MonoBehaviour
            // i.gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
         Mesh outputmesh = CombineMeshes(childMeshs);
+        outputmesh.name = "Combinedmesh";
         filter.mesh = outputmesh;
         
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     private Mesh CombineMeshes(List<Mesh> meshes)
     {
         var combine = new CombineInstance[meshes.Count];

@@ -18,7 +18,7 @@ namespace ACE.Goals
             List<Goal> loadedGoals = new List<Goal>();
             StreamReader stream = new StreamReader(GOALFILELOCATION + FileName + ".xml");
             XmlReader reader = XmlReader.Create(stream);
-            Goal goalToEdit = new Goal();
+            Goal goalToEdit = null;
             while (reader.Read())
             {
                 

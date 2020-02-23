@@ -227,11 +227,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1598405179812647219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bfc1ac2aebded641a70cf001ee3377f, type: 3}
+  m_Script: {fileID: 11500000, guid: 064c0797585036b419ee34a0e3e89293, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: /actions/Default/in/Grab
+    actionPath: /actions/default/in/Grab
     needsReinit: 0
   handType: 0
   door: {fileID: 3507185242180924959}

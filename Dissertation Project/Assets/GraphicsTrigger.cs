@@ -9,6 +9,7 @@ public class GraphicsTrigger : MonoBehaviour
 {
     public SteamVR_Action_Boolean control;
     public SteamVR_Input_Sources handType;
+    public GameObject objectToActivate;
     bool handNear = false;
     bool triggered = false;
     private Quaternion originalTransform;
@@ -45,11 +46,13 @@ public class GraphicsTrigger : MonoBehaviour
             if (triggered)
             {
                 gameObject.transform.rotation = originalTransform;
+                objectToActivate.SetActive(false);
                 triggered = false;
             }
             else
             {
-                gameObject.transform.rotation = Quaternion.Euler(originalTransform.eulerAngles + new Vector3(0, 90, 0));
+                gameObject.transform.rotation = Quaternion.Euler(originalTransform.eulerAngles + new Vector3(0, 0, 90));
+                objectToActivate.SetActive(true) ;
                 triggered = true;
             }
         }

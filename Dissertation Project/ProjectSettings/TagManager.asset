@@ -9,6 +9,7 @@ TagManager:
   - ExcludeTeleport
   - TaskManager
   - KeyItem
+  - HintManager
   layers:
   - Default
   - TransparentFX
