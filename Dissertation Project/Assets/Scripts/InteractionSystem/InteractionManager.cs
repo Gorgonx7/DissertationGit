@@ -8,13 +8,16 @@ using UnityEngine;
 
 namespace Assets.Scripts.InteractionSystem
 {
-    class InteractionManager : MonoBehaviour
+    static class InteractionManager
     {
-        List<Goal> activeGoalList = new List<Goal>();
-        private void Start()
+        static List<Goal> orderedListOfGoals = new List<Goal>();
+        public static void registerInteraction(GameObject gameObj)
         {
-            activeGoalList = GameObject.FindGameObjectWithTag("").GetComponent<GoalManager>().GetGoals().ToList();
-        }
 
+        }
+        public static List<Goal> GetInteractionOrderedList()
+        {
+
+        }
     }
 }
