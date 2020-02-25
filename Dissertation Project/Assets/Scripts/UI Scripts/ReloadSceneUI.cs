@@ -5,9 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Valve.VR;
 using UnityEngine.SceneManagement;
+using Util.Interactables;
+
 namespace Assets.UI_Scripts
 {
-    class ReloadSceneUI : InteractableCollision
+    public class ReloadSceneUI : InteractableCollision
     {
         public override void LogEvent()
         {
@@ -21,7 +23,12 @@ namespace Assets.UI_Scripts
                 return;
             }
             SceneManager.LoadScene("scene1", LoadSceneMode.Single);
-            base.OnEventDown(fromAction, fromSource);
+            
+        }
+
+        public override void OnEventUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+        {
+            // Not needed for this interaction
         }
     }
 }

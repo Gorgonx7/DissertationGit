@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &8549822 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6379464839706603134, guid: b374a5aa1d5b65f4c84e525662a207ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2894581172913074781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &46714074
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,11 +413,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 254817038}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 064c0797585036b419ee34a0e3e89293, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d8f581ccca434d4689a374b61f73b91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: /actions/default/in/Grab
+    actionPath: 
     needsReinit: 0
   handType: 0
   door: {fileID: 911759203}
@@ -863,8 +869,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d208d461e3cf24491243c03add43e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 547020159969080474, guid: 9c31ebabe4ffd1d44ac9e8fa9876a225,
-    type: 3}
 --- !u!1 &492262689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,12 +1527,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 737299498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4ac4fad98221542abe0cce677af4e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7a05669d3c9cc6142811a1a3037d52c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NewHintTime: 5
   flashMaterial: {fileID: 2100000, guid: 8cbb17e7da1d41f40908e74427de3cd2, type: 2}
-  FirstRun: 1
 --- !u!1001 &787131095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2385,6 +2388,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!4 &1116388783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5645685079010719160, guid: b374a5aa1d5b65f4c84e525662a207ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2894581172913074781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1121343887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,6 +2557,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133328004}
   m_CullTransparentMesh: 0
+--- !u!4 &1147166414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2669917586793242216, guid: b374a5aa1d5b65f4c84e525662a207ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2894581172913074781}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1151191580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3723,6 +3738,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: KeyItem
       objectReference: {fileID: 0}
+    - target: {fileID: 6403330847379973404, guid: 4da062ffe11fac6459c3f888f60d086b,
+        type: 3}
+      propertyPath: m_Name
+      value: KettleHandle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6403330847379973404, guid: 4da062ffe11fac6459c3f888f60d086b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4669753847361730, guid: 4da062ffe11fac6459c3f888f60d086b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.253
@@ -3783,16 +3808,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Convex
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6403330847379973404, guid: 4da062ffe11fac6459c3f888f60d086b,
-        type: 3}
-      propertyPath: m_Name
-      value: KettleHandle
-      objectReference: {fileID: 0}
-    - target: {fileID: 6403330847379973404, guid: 4da062ffe11fac6459c3f888f60d086b,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5595572599680750693, guid: 4da062ffe11fac6459c3f888f60d086b,
         type: 3}
@@ -4179,6 +4194,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4387699066037715824, guid: e89b872100cc91e4bbea38f393cb79f8,
     type: 3}
   m_PrefabInstance: {fileID: 1939154747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1857870880 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6560182439953108099, guid: b374a5aa1d5b65f4c84e525662a207ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2894581172913074781}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1877123030
 GameObject:
@@ -4571,9 +4592,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2030595204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263d21a87a621294cbe79e1bfa2e64e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 50579a955376fa644b298fbb3a5ca3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 547020159969080474, guid: 9c31ebabe4ffd1d44ac9e8fa9876a225,
+    type: 3}
 --- !u!1 &2069909048
 GameObject:
   m_ObjectHideFlags: 0
@@ -5224,6 +5247,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 2894581172848186756, guid: b374a5aa1d5b65f4c84e525662a207ae,
+        type: 3}
+      propertyPath: hours
+      value: 
+      objectReference: {fileID: 8549822}
+    - target: {fileID: 2894581172848186756, guid: b374a5aa1d5b65f4c84e525662a207ae,
+        type: 3}
+      propertyPath: minutes
+      value: 
+      objectReference: {fileID: 1147166414}
+    - target: {fileID: 2894581172848186756, guid: b374a5aa1d5b65f4c84e525662a207ae,
+        type: 3}
+      propertyPath: seconds
+      value: 
+      objectReference: {fileID: 1116388783}
+    - target: {fileID: 2894581172848186756, guid: b374a5aa1d5b65f4c84e525662a207ae,
+        type: 3}
+      propertyPath: tickingSound
+      value: 
+      objectReference: {fileID: 1857870880}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b374a5aa1d5b65f4c84e525662a207ae, type: 3}
 --- !u!1001 &3763749533548204712
