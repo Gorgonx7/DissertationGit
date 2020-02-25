@@ -31,7 +31,7 @@ namespace ACE.FileSystem
             components = new List<ISerializableComponent>();
             foreach (Component i in objectToSave.GetComponents<Component>())
             {
-                if (!( i is MeshFilter || i is MeshRenderer || i is Transform))
+                if (!( i is MeshFilter || i is MeshRenderer))
                 {
 
 

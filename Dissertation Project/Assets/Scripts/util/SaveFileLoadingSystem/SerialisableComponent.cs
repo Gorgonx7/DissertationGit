@@ -47,7 +47,14 @@ namespace ACE.FileSystem
         }
         public void addToGameObject(GameObject objectToAttatchTo)
         {
-            Component comp = objectToAttatchTo.AddComponent(componentType);
+            Component comp;
+            if (componentType == Type.GetType("UnityEngine.Transform"))
+            {
+                comp = objectToAttatchTo.transform;
+                // TODO decerialse more transform stuff as scale currently is not being set correctly, possibly redirect transforms to their own function
+
+            }
+            comp = objectToAttatchTo.AddComponent(componentType);
             foreach (KeyValuePair<String, ACE_PropertyField> i in componentVariable)
             {
                 object value = i.Value.m_Val;
