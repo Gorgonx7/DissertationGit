@@ -16,5 +16,6 @@ namespace Assets
         {
             SceneManager.LoadScene(SceneName, LoadSceneMode.Single);
         }
+        
     }
 }
