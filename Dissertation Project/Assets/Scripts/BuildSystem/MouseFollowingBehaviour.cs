@@ -5,12 +5,12 @@ using UnityEngine;
 //Make an object follow the mouse, also stops following when tabbed out (think a multiuse computer)
 public class MouseFollowingBehaviour : MonoBehaviour
 {
-    
+    BuildController control;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        control = GameObject.FindGameObjectWithTag("BuildController").GetComponent<BuildController>();
     }
     // Update is called once per frame
     void Update()
@@ -23,6 +23,7 @@ public class MouseFollowingBehaviour : MonoBehaviour
             
             gameObject.transform.position = Camera.main.ScreenToWorldPoint(mouseVector);
        }
-            
+      
     }
+    
 }
