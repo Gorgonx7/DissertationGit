@@ -523,6 +523,7 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
+    <Compile Include="Assets\Scripts\util\ScriptDropDownInit.cs" />
     <Compile Include="Assets\UI\UIChanger.cs" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />
     <None Include="Assets\Graphics\Shaders\EmptyShader.shader" />

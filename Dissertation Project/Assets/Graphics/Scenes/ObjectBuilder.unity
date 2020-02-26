@@ -1338,30 +1338,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408403799}
   m_CullTransparentMesh: 0
---- !u!1 &456755708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9214467480564484616, guid: 5715630094050d1479daec12f58e6e34,
-    type: 3}
-  m_PrefabInstance: {fileID: 9214467480713872372}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &456755709 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9214467480564484617, guid: 5715630094050d1479daec12f58e6e34,
     type: 3}
   m_PrefabInstance: {fileID: 9214467480713872372}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &456755713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456755708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b7cd137942e9347846d4daa3c16892, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &536900995
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1417,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 8.666667, y: 8, z: -9.333333, w: 8}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -5041,6 +5023,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 456755713}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5715630094050d1479daec12f58e6e34, type: 3}
