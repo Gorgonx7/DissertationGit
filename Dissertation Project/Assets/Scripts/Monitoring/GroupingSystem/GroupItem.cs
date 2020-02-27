@@ -39,7 +39,7 @@ namespace ACE.Groups
             
             foreach(Collider i in surroundingObjects)
             {
-                if(i.gameObject.GetComponent<KeyItem>() != null)
+                if(i.gameObject.tag == "KeyItem")
                 {
                     GroupItem item = i.gameObject.GetComponent<GroupItem>();
                     

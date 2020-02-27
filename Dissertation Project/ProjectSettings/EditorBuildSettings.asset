@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Graphics/Scenes/CalibrationScene.unity
     guid: 94437be345ab24f4186af14b7e5aa239
   - enabled: 1
-    path: Assets/Graphics/Scenes/scene1.unity
+    path: Assets/Graphics/Scenes/SampleSceneTeaMaking.unity
     guid: 5cd88eeb8e03ba24e86f0f0b83d36403
   m_configObjects: {}

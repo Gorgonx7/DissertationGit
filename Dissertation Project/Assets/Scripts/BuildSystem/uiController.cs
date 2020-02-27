@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Assets;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -17,5 +18,9 @@ public class uiController : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+    public void LoadLevel(string levelToLoad)
+    {
+        SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
     }
 }

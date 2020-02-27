@@ -30,13 +30,14 @@ public class SeenBehaviour : MonoBehaviour
         glowHolder.AddComponent<MeshRenderer>();
         glowHolder.GetComponent<MeshFilter>().mesh = gameObject.GetComponent<MeshFilter>().mesh;
         glowHolder.GetComponent<MeshRenderer>().material = FadeMaterial;
-        vrCamera = GameObject.Find("VRCamera").GetComponent<Camera>();
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        vrCamera = GameObject.Find("VRCamera").GetComponent<Camera>();
         Vector3 ScreenPosition = Camera.main.WorldToViewportPoint(gameObject.transform.position);
         float isInFront = gameObject.transform.position.z * Camera.main.transform.position.z;
         RaycastHit hit;

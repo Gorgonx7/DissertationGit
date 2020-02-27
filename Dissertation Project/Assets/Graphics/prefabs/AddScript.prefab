@@ -950,6 +950,7 @@ GameObject:
   - component: {fileID: 9214467480564484596}
   - component: {fileID: 9214467480564484619}
   - component: {fileID: 9214467480564484618}
+  - component: {fileID: 2446293349592752646}
   m_Layer: 5
   m_Name: AddScript
   m_TagString: ScriptProperty
@@ -1086,6 +1087,19 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_AlphaFadeSpeed: 0.15
+--- !u!114 &2446293349592752646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9214467480564484616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b641ed3370b6b1c4f8d2e52596d3b0b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameSpaceName: ACE.Event_System
 --- !u!1 &9214467480693824626
 GameObject:
   m_ObjectHideFlags: 0

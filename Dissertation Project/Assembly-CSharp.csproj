@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FileName.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerChanger.cs" />
@@ -439,8 +440,17 @@
     <Compile Include="Assets\Scripts\BuildSystem\ButtonCreator.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\CameraControlScript.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\MouseFollowingBehaviour.cs" />
-    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\CreateGrabUI.cs" />
-    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\LoadObject.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\ControlScripts\cameraRotate.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\ControlScripts\ClickandDrag.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\ControlScripts\ClickandDragTranslate.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\ControlScripts\ComponentHolder.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\ControlScripts\GrabBoxScript.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\ControlScripts\toggleController.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\SavingUtilities\LoadObject.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\SavingUtilities\saveHandler.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\UI\ActivateEdit.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\UI\AddNewScriptOption.cs" />
+    <Compile Include="Assets\Scripts\BuildSystem\ObjectBuilder\UI\CreateGrabUI.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\uiController.cs" />
     <Compile Include="Assets\Scripts\Control systems\ACEEventSystem\ACE_Action.cs" />
     <Compile Include="Assets\Scripts\Control systems\ACEEventSystem\ACE_Combine.cs" />
@@ -454,7 +464,13 @@
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalLoader.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalManager.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalUI.cs" />
+    <Compile Include="Assets\Scripts\Control systems\Levelmanager.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GatherKeyObjects.cs" />
+    <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\Group.cs" />
+    <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GroupDistributor.cs" />
+    <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GroupItem.cs" />
+    <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GroupUpdate.cs" />
+    <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\KeyItem.cs" />
     <Compile Include="Assets\Scripts\Monitoring\Hints\HintData.cs" />
     <Compile Include="Assets\Scripts\Monitoring\Hints\HintManager.cs" />
     <Compile Include="Assets\Scripts\Monitoring\Hints\HintSet.cs" />
@@ -469,7 +485,6 @@
     <Compile Include="Assets\Scripts\Test_Suite\TestCase.cs" />
     <Compile Include="Assets\Scripts\Test_Suite\TestSuite.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ArmUI.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\ClickandDrag.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\collisionEffect.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\drawControllerLine.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\monitorCameraUIController.cs" />
@@ -503,8 +518,13 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\GameObjectSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\ISerializableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\ObjectDirectoryManager.cs" />
+    <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\saveScene.cs" />
+    <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneCaretaker.cs" />
+    <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
+    <Compile Include="Assets\Scripts\util\ScriptDropDownInit.cs" />
+    <Compile Include="Assets\UI\UIChanger.cs" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />
     <None Include="Assets\Graphics\Shaders\EmptyShader.shader" />
     <None Include="Assets\Docs\LogSystem.cd" />
