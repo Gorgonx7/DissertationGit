@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 547559070470289660}
   - component: {fileID: 547020158464984237}
   - component: {fileID: 547020158464984238}
-  - component: {fileID: 547020158464984236}
   - component: {fileID: 4594306100014407529}
   m_Layer: 26
   m_Name: ObjectAttachmentPoint
@@ -57,22 +56,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d7a5bf2d34495c4383a32b05a3ca597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  control:
-    actionPath: /actions/default/in/Grab
-    needsReinit: 0
-  handType: 0
---- !u!114 &547020158464984236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546319213391759772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a89dc00bec3ee04994fc68ab1f6d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   control:
@@ -1255,7 +1238,6 @@ GameObject:
   m_Component:
   - component: {fileID: 547020159963552149}
   - component: {fileID: 547020159963552155}
-  - component: {fileID: 547020159963552148}
   m_Layer: 0
   m_Name: MonitorCameraFirstPerson
   m_TagString: Untagged
@@ -1320,19 +1302,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &547020159963552148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547020159963552150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd79fe25404901a428239652f625945e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReplacementShader: {fileID: 4800000, guid: 3c8a4932138968742919aefb0497d5e9, type: 3}
 --- !u!1 &547020159968870948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2160,6 @@ GameObject:
   - component: {fileID: 547020159968733970}
   - component: {fileID: 547020159969038651}
   - component: {fileID: 547020159969038646}
-  - component: {fileID: 547020159969038645}
   - component: {fileID: 254504799383535697}
   m_Layer: 26
   m_Name: ObjectAttachmentPoint
@@ -2237,22 +2205,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d7a5bf2d34495c4383a32b05a3ca597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  control:
-    actionPath: /actions/default/in/Grab
-    needsReinit: 0
-  handType: 0
---- !u!114 &547020159969038645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547020159969073478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a89dc00bec3ee04994fc68ab1f6d73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   control:
@@ -2811,7 +2763,6 @@ GameObject:
   - component: {fileID: 547020159957608878}
   - component: {fileID: 547020159959830502}
   - component: {fileID: 547020159958860588}
-  - component: {fileID: 547020159313983913}
   m_Layer: 0
   m_Name: VRCamera
   m_TagString: MainCamera
@@ -2904,19 +2855,6 @@ Behaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547020159969099068}
   m_Enabled: 1
---- !u!114 &547020159313983913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 547020159969099068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd79fe25404901a428239652f625945e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ReplacementShader: {fileID: 4800000, guid: 3c8a4932138968742919aefb0497d5e9, type: 3}
 --- !u!1001 &547020159964457642
 PrefabInstance:
   m_ObjectHideFlags: 0

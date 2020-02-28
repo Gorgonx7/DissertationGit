@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FileName.cs" />
+    <Compile Include="Assets\HowToImproveController.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerChanger.cs" />
@@ -432,6 +433,7 @@
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
+    <Compile Include="Assets\RatingController.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanCompleteAGoal.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanSaveDefaultGameObject.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\attatchBuildObject.cs" />
@@ -465,6 +467,11 @@
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalManager.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalUI.cs" />
     <Compile Include="Assets\Scripts\Control systems\Levelmanager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\AttentionManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\FinalScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\GoalCompletionManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\MultitaskingManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\TimeCompletionManager.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GatherKeyObjects.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\Group.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GroupDistributor.cs" />
@@ -479,7 +486,6 @@
     <Compile Include="Assets\Scripts\Monitoring\InteractionSystem\InteractionManager.cs" />
     <Compile Include="Assets\Scripts\Monitoring\SeenBehaviour\SeenBehaviour.cs" />
     <Compile Include="Assets\Scripts\Monitoring\TimeManagement\TimeManager.cs" />
-    <Compile Include="Assets\Scripts\Monitoring\TimeManagement\TimeSeenGetter.cs" />
     <Compile Include="Assets\Scripts\Test_Suite\CheckRawLogSyntax.cs" />
     <Compile Include="Assets\Scripts\Test_Suite\GetLog.cs" />
     <Compile Include="Assets\Scripts\Test_Suite\TestCase.cs" />
@@ -498,9 +504,6 @@
     <Compile Include="Assets\Scripts\util\Interactables\interactableCollision.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\IVREvent.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\Mover.cs" />
-    <Compile Include="Assets\Scripts\util\Interactables\Pullable.cs" />
-    <Compile Include="Assets\Scripts\util\Interactables\Puller.cs" />
-    <Compile Include="Assets\Scripts\util\Interactables\SceneSwitcher.cs" />
     <Compile Include="Assets\Scripts\util\LogUtil\Log2HTML\Log2HTML.cs" />
     <Compile Include="Assets\Scripts\util\LogUtil\logController.cs" />
     <Compile Include="Assets\Scripts\util\LogUtil\LogListener.cs" />
@@ -523,6 +526,7 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
+    <Compile Include="Assets\Scripts\util\SceneSwitcher.cs" />
     <Compile Include="Assets\Scripts\util\ScriptDropDownInit.cs" />
     <Compile Include="Assets\UI\UIChanger.cs" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />

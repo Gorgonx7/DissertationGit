@@ -5,7 +5,7 @@ using UnityEngine;
 public class drawControllerLine : MonoBehaviour {
 
     public float lineLength = 2.5f;
-    public LineRenderer renderer;
+    public LineRenderer m_renderer;
     public float rotationFix = 0.0f;
     // Use this for initialization
 	void Start () {
@@ -19,10 +19,10 @@ public class drawControllerLine : MonoBehaviour {
         Quaternion currentRotation = gameObject.transform.rotation;
         currentRotation.z = 0;
         currentRotation.x += rotationFix;
-        renderer.SetPosition(0,  gameObject.transform.position);
+        m_renderer.SetPosition(0,  gameObject.transform.position);
         Vector3 endVector = gameObject.transform.position + new Vector3(0, 0, lineLength);
 
-        renderer.SetPosition(1,  currentRotation * endVector);
+        m_renderer.SetPosition(1,  currentRotation * endVector);
         
     }
 }

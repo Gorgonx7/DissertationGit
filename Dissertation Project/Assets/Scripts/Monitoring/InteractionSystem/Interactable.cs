@@ -4,44 +4,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
-
-public class Interactable : MonoBehaviour
+using Util.Interactables;
+public class Interactable : InteractableCollision
 {
-    public SteamVR_Action_Boolean control;
-    public SteamVR_Input_Sources handType;
-    bool handNear = false;
     private HintManager hintControl;
     // Start is called before the first frame update
-    void Start()
+    public override void Start()
     {
-        control.AddOnStateDownListener(GrabDown, handType);
-        control.AddOnStateUpListener(GrabUp, handType);
+       
         hintControl = GameObject.FindGameObjectWithTag("HintManager").GetComponent<HintManager>();
-
+        base.Start();
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    public override void LogEvent()
     {
-        
+        // Not needed for this function as each interaction has its own logs
     }
-    private void OnTriggerEnter(Collider other)
+
+    public override void OnEventDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        if (other.gameObject.GetComponent<Grabber>() != null)
-        {
-            handNear = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.GetComponent<Grabber>() != null)
-        {
-            handNear = false;
-        }
-    }
-    private void GrabDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
-    {
-        if (handNear)
+        if (isHandNear)
         {
             LogManager.Log("interacted With: " + gameObject.name);
             if (hintControl.doesCurrentFlashingContain(gameObject.transform.parent.gameObject))
@@ -49,15 +33,14 @@ public class Interactable : MonoBehaviour
                 hintControl.ResetFlash();
             }
         }
-
     }
-    private void GrabUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+
+    public override void OnEventUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
     {
-        if (handNear)
+        if (isHandNear)
         {
             LogManager.Log("stopped interacted With: " + gameObject.name);
 
         }
-
     }
 }

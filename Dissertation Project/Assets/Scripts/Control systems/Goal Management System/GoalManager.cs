@@ -18,6 +18,7 @@ namespace ACE.Goals
 {
     public class GoalManager : MonoBehaviour
     {
+        //List of completed Goals
         private static List<Goal> completedGoals = new List<Goal>();
 
         /// <summary>
@@ -53,6 +54,9 @@ namespace ACE.Goals
         {
             return GetComponents<Goal>();
         }
-      
+        public Goal[] GetCompletedGoals()
+        {
+            return completedGoals.ToArray() ;
+        }
     }
 }

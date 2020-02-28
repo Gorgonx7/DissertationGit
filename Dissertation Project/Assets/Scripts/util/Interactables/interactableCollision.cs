@@ -13,14 +13,14 @@ namespace Util.Interactables
     public abstract class InteractableCollision : IVREvent
     {
         protected bool isHandNear = false;
-        private void OnTriggerEnter(Collider other)
+        protected virtual  void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.GetComponent<Grabber>() != null)
             {
                 isHandNear = true;
             }
         }
-        private void OnTriggerExit(Collider other)
+        protected virtual  void OnTriggerExit(Collider other)
         {
             if (other.gameObject.GetComponent<Grabber>() != null)
             {

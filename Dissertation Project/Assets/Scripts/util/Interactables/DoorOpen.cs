@@ -11,16 +11,15 @@ namespace Util.Interactables
     public class DoorOpen : InteractableCollision
     {
       
-        private bool isgrabbed = false;
+   
         private bool isopen = false;
         public GameObject door;
         Quaternion initialRotation;
-        private ACE_Event_Controller controller;
+      
         // Start is called before the first frame update
         public override void Start()
         {
             initialRotation = door.transform.rotation;
-            controller = GameObject.FindGameObjectWithTag("ACE_Controller").GetComponent<ACE_Event_Controller>();
             base.Start();
         }
 
@@ -35,17 +34,17 @@ namespace Util.Interactables
 
         public override void OnEventDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
         {
-            if (isgrabbed)
+            if (isHandNear)
             {
                 if (isopen)
                 {
-                    controller.Log(gameObject.transform.parent.name + " Closed");
+                    LogEvent();
                     isopen = false;
                     door.transform.rotation = initialRotation;
                 }
                 else if (!isopen)
                 {
-                    controller.Log(gameObject.transform.parent.name + " Opened");
+                    
                     isopen = true;
                     door.transform.rotation = Quaternion.Euler(initialRotation.eulerAngles.x, initialRotation.eulerAngles.y, -90);
                 }

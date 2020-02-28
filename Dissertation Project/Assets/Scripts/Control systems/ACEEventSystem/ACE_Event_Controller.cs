@@ -15,7 +15,7 @@ namespace ACE.Event_System
         private List<string> EmittingEventNames = new List<string>();
         public List<ACE_Event> EmittingEvents = new List<ACE_Event>();
         private List<string> duplicatedEventLog = new List<string>();
-
+        private List<string> duplicatedEventGameObjectNames = new List<string>();
         // Use this for initialization
         void Start()
         {
@@ -43,12 +43,14 @@ namespace ACE.Event_System
                 {
                     // we have a duplicated event, something that has already been done, this may or may not be important
                     string output = "Duplicated Event Detected: Originator: " + IncomingEvent.OriginatorName;
+                    duplicatedEventGameObjectNames.Add(IncomingEvent.OriginatorName);
+                    
                     LogManager.Log(output);
                     foreach (string i in IncomingEvent.interactedObjectNames)
                     {
                         
                         duplicatedEventLog.Add(output + "interacted object: " + i);
-                        
+                        duplicatedEventGameObjectNames.Add(i);    
                     }
                 }
             }
@@ -77,9 +79,9 @@ namespace ACE.Event_System
             }
             return null;
         }
-        public void OnScenarioEnd()
+        public string[] GetListOfDuplicatedGameObjects()
         {
-            
+            return duplicatedEventGameObjectNames.ToArray();
         }
         public void Log(string logString)
         {

@@ -4,59 +4,51 @@ using UnityEngine;
 
 using Valve.VR;
 using Valve.VR.InteractionSystem;
-
-public class GraphicsTrigger : MonoBehaviour
+namespace Util.Interactables
 {
-    public SteamVR_Action_Boolean control;
-    public SteamVR_Input_Sources handType;
-    public GameObject objectToActivate;
-    bool handNear = false;
-    bool triggered = false;
-    private Quaternion originalTransform;
-    // Start is called before the first frame update
-    void Start()
+    public class GraphicsTrigger : InteractableCollision
     {
-        control.AddOnStateDownListener(GrabDown, handType);
-        originalTransform = gameObject.transform.rotation;
-    }
+      
+        public GameObject objectToActivate;
 
-    // Update is called once per frame
-    void Update()
-    {
+        bool triggered = false;
+        private Quaternion originalTransform;
+        // Start is called before the first frame update
         
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.GetComponent<Grabber>() != null)
+        public override void Start()
         {
-            handNear = true;
+            
+            originalTransform = gameObject.transform.rotation;
+            base.Start();
         }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.GetComponent<Grabber>() != null)
+
+        public override void LogEvent()
         {
-            handNear = false;
+            throw new System.NotImplementedException();
         }
-    }
-    private void GrabDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
-    {
-        if (handNear)
+
+        public override void OnEventDown(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
         {
-            if (triggered)
+            if (isHandNear)
             {
-                gameObject.transform.rotation = originalTransform;
-                objectToActivate.SetActive(false);
-                triggered = false;
-            }
-            else
-            {
-                gameObject.transform.rotation = Quaternion.Euler(originalTransform.eulerAngles + new Vector3(0, 0, 90));
-                objectToActivate.SetActive(true) ;
-                triggered = true;
+                if (triggered)
+                {
+                    gameObject.transform.rotation = originalTransform;
+                    objectToActivate.SetActive(false);
+                    triggered = false;
+                }
+                else
+                {
+                    gameObject.transform.rotation = Quaternion.Euler(originalTransform.eulerAngles + new Vector3(0, 0, 90));
+                    objectToActivate.SetActive(true);
+                    triggered = true;
+                }
             }
         }
-        
+
+        public override void OnEventUp(SteamVR_Action_Boolean fromAction, SteamVR_Input_Sources fromSource)
+        {
+            // Not needed for this interaction
+        }
     }
-   
 }

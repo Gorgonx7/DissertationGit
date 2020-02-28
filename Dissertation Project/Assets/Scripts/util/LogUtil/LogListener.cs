@@ -8,6 +8,7 @@ public class LogListener : MonoBehaviour
 {
     public GameObject logPrefab;
     public List<GameObject> logList = new List<GameObject>();
+    public float xOffset = -196;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class LogListener : MonoBehaviour
         {
             totalHeight += i.GetComponent<Text>().preferredHeight; 
         }
-        log.transform.localPosition += new Vector3(-196, totalHeight, 0); ;
+        log.transform.localPosition += new Vector3(xOffset, totalHeight, 0); ;
         logList.Add(log);
 
     }

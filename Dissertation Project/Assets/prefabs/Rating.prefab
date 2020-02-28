@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1212122660415817504}
   - component: {fileID: 802933770537587607}
   - component: {fileID: 2222744841563024029}
+  - component: {fileID: 7549631045163255682}
   m_Layer: 5
   m_Name: RatingValue
   m_TagString: Untagged
@@ -77,6 +78,18 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1/5
+--- !u!114 &7549631045163255682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645782530626332647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 941dbbd8d15cc2e48866015974c2c69c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &818321051428439950
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +179,7 @@ GameObject:
   - component: {fileID: 818321052590315465}
   - component: {fileID: 818321052590315462}
   m_Layer: 5
-  m_Name: Text
+  m_Name: WaysToImproveTitle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,6 +255,7 @@ GameObject:
   - component: {fileID: 818321052926564690}
   - component: {fileID: 818321052926564692}
   - component: {fileID: 818321052926564693}
+  - component: {fileID: 7338793944513779376}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -316,6 +330,18 @@ MonoBehaviour:
     >
 
     >'
+--- !u!114 &7338793944513779376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818321052926564691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45fb3e83aa35cc4f9fa9cf1af6a1ccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6507341559888704107
 GameObject:
   m_ObjectHideFlags: 0
