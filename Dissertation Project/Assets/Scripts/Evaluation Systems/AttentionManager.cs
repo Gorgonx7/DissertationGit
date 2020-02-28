@@ -2,6 +2,7 @@
 using ACE.Goals;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 public enum AttentionType
 {
@@ -25,7 +26,15 @@ public class Attentionmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        List<Goal> allGoals = GameObject.FindGameObjectWithTag("GoalManager").GetComponent<GoalManager>().GetCompletedGoals().;        
+        List<Goal> allGoals = GameObject.FindGameObjectWithTag("GoalManager").GetComponent<GoalManager>().GetCompletedGoals().ToList();
+        allGoals.AddRange(GameObject.FindGameObjectWithTag("GoalManager").GetComponent<GoalManager>().GetGoals());
+        float totalSightComponent = 0.0f;
+        foreach(Goal i in allGoals)
+        {
+            totalSightComponent += CalculateSightComponent(i);
+        }
+        totalSightComponent /= allGoals.Count;
+        float total = totalSightComponent + CalculateGoalComponent();
     }
     /// <summary>
     /// Calculates
@@ -61,7 +70,7 @@ public class Attentionmanager : MonoBehaviour
         // following the logic above, if we added them together they would be somevalue /3. which is a quater of this, multiply this by the magic value of 1.25
         //TODO Refactor
         output = (fractionOfTimeInPeriferal * 0.25f) + (fractionOfTimeInCentre * 0.75f);
-        // this currently produces a value between 0-1 so I need to refactor to generate a betteer 
+        // this currently produces a value between 0-1 so I need to refactor to generate a better 
         return output;
     }
     /// <summary>
@@ -95,7 +104,7 @@ public class Attentionmanager : MonoBehaviour
         }
         else
         {
-            output += 2.5f;
+            output += 2.0f;
         }
         
         return output;
