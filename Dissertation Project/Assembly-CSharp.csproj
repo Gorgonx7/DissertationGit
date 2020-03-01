@@ -468,6 +468,7 @@
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalUI.cs" />
     <Compile Include="Assets\Scripts\Control systems\Levelmanager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\AttentionManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\EvaluationManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\FinalScoreManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\GoalCompletionManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\MultitaskingManager.cs" />
