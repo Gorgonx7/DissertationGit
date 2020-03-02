@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ACE.EvaulationSystem
 {
-    public class TimeCompletionMager : MonoBehaviour
+    public class TimeCompletionManager : MonoBehaviour
     {
         // Start is called before the first frame update
         void Start()

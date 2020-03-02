@@ -14,7 +14,7 @@ namespace ACE.EvaulationSystem
     /// <summary>
     /// Final class to pull together all information and calculate a rating for attention
     /// </summary>
-    public class Attentionmanager : EvaluationManager
+    public class AttentionManager : EvaluationManager
     {
         public AttentionType attentionType;
         
@@ -28,8 +28,8 @@ namespace ACE.EvaulationSystem
         // Update is called once per frame
         public override void Update()
         {
-            List<Goal> allGoals = GameObject.FindGameObjectWithTag("GoalManager").GetComponent<GoalManager>().GetCompletedGoals().ToList();
-            allGoals.AddRange(GameObject.FindGameObjectWithTag("GoalManager").GetComponent<GoalManager>().GetGoals());
+            List<Goal> allGoals = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<GoalManager>().GetCompletedGoals().ToList();
+            allGoals.AddRange(GameObject.FindGameObjectWithTag("TaskManager").GetComponent<GoalManager>().GetGoals());
             float totalSightComponent = 0.0f;
             foreach (Goal i in allGoals)
             {
@@ -37,6 +37,7 @@ namespace ACE.EvaulationSystem
             }
             totalSightComponent /= allGoals.Count;
             currentRating = (int)Mathf.Ceil(totalSightComponent + CalculateGoalComponent());
+            base.Update();
         }
         /// <summary>
         /// Calculates
@@ -49,7 +50,11 @@ namespace ACE.EvaulationSystem
             float output = 0.0f;
             foreach (string i in pGoal.importantItems)
             {
-                goalSeenBehaviours.Add(GameObject.Find(i).GetComponent<SeenBehaviour>());
+                GameObject holder = GameObject.Find(i);
+                if (holder != null)
+                {
+                    goalSeenBehaviours.Add(holder.GetComponent<SeenBehaviour>());
+                }
             }
             //lets add all those together and see what happens
             float totalTimeSepentLookingAtItems = 0.0f;

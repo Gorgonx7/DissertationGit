@@ -34,8 +34,10 @@ public class selectionHandler : MonoBehaviour {
         if (collidedObject != null)
         {
             collidedObject.GetComponent<SceneSwitcher>().switchScene();
+            Destroy(gameObject.transform.parent.gameObject.transform.parent.gameObject);
         }
-        Debug.Log("EventDown");
+
+        
     }
    
 }

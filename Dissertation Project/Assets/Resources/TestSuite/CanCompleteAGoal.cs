@@ -1,4 +1,5 @@
-﻿using ACE.Goals;
+﻿#if(UNITY_EDITOR)
+using ACE.Goals;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,3 +48,4 @@ namespace Assets.Test_Suite
         }
     }
 }
+#endif

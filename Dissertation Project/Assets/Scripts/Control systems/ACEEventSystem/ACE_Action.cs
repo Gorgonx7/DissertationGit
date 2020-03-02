@@ -33,14 +33,11 @@ namespace ACE.Event_System
         //Sets if the less than triggers should be used
         public bool invert;
         //Sets if X Y or Z matters to the trigger
-        public bool x_Matters;
-        public bool y_Matters;
-        public bool z_Matters;
+        public bool x_Matters, y_Matters, z_Matters;
         //Used to define a component type that a object has to have if a collision is present
         public Component componentType;
         public string requiredState = null;
-        public ACE_Interaction trigger_Interaction;
-        public ACE_Event EmittingEvent;
+        private ACE_Event EmittingEvent;
         public ACE_Interaction interactionObject;
         private delegate bool trigger();
         private trigger Trigger;

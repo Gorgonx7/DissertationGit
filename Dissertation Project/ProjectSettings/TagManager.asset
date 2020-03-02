@@ -14,6 +14,8 @@ TagManager:
   - Floor
   - ScriptProperty
   - EditableObject
+  - Managers
+  - SceneManager
   layers:
   - Default
   - TransparentFX

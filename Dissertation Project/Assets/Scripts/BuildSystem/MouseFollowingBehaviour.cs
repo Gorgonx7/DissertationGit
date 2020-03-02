@@ -18,7 +18,7 @@ public class MouseFollowingBehaviour : MonoBehaviour
        
         Vector3 mouseVector = Input.mousePosition;
         mouseVector.z += 10.0f;
-       if(!(mouseVector.x == 0.0f || mouseVector.y == 0 || mouseVector.x >= Handles.GetMainGameViewSize().x -1 || mouseVector.y  >= Handles.GetMainGameViewSize().y - 1 || mouseVector.x >= Screen.width - 1 || mouseVector.y >= Screen.height - 1))
+       if(!(mouseVector.x == 0.0f || mouseVector.y == 0 ||  mouseVector.x >= Screen.width - 1 || mouseVector.y >= Screen.height - 1))
        {
             
             gameObject.transform.position = Camera.main.ScreenToWorldPoint(mouseVector);

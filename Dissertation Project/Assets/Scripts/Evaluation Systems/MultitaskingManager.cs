@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ACE.EvaulationSystem
 {
-    public class MultitaskingManager : MonoBehaviour
+    public class MultitaskingManager : EvaluationManager
     {
         // Start is called before the first frame update
         void Start()
@@ -13,7 +13,11 @@ namespace ACE.EvaulationSystem
         }
 
         // Update is called once per frame
-        void Update()
+        public override void Update()
+        {
+
+        }
+        public AttentionType getTypeOfAttention()
         {
 
         }

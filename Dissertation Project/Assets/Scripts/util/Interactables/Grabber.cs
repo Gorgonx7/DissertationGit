@@ -51,13 +51,15 @@ namespace Util.Interactables
         {
             if (ObjectInRange != null && grabbedObject == null)
             {
+                if (ObjectInRange.GetComponent<GraphicsTrigger>() == null)
+                {
+                    ObjectInRange.gameObject.GetComponentInParent<Rigidbody>().useGravity = false;
+                    ObjectInRange.gameObject.GetComponentInParent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    ObjectInRange.Grab(gameObject.transform);
+                    grabbedObject = ObjectInRange;
 
-                ObjectInRange.gameObject.GetComponentInParent<Rigidbody>().useGravity = false;
-                ObjectInRange.gameObject.GetComponentInParent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-                ObjectInRange.Grab(gameObject.transform);
-                grabbedObject = ObjectInRange;
-
-                ObjectInRange = null;
+                    ObjectInRange = null;
+                }
 
             }
         }

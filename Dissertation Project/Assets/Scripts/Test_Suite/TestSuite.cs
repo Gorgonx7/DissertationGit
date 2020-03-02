@@ -4,6 +4,7 @@ using UnityEngine;
 using Assets.LogUtil;
 using UnityEditor;
 
+#if (UNITY_EDITOR)
 public class TestSuite : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -48,3 +49,4 @@ public class TestSuite : MonoBehaviour
         }
     }
 }
+#endif

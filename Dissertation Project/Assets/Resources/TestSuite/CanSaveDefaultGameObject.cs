@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#if(UNITY_EDITOR)
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ACE.FileSystem;
@@ -40,3 +41,4 @@ public class CanSaveDefaultGameObject : TestCase
         Test();
     }
 }
+#endif
