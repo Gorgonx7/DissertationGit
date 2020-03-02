@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACE.Goals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,15 @@ using System.Threading.Tasks;
 using UnityEngine;
 
 namespace ACE.Groups {
-
+    public enum GroupType
+    {
+        logical, random
+    }
     class Group
     {
         List<GroupItem> m_Items = new List<GroupItem>();
         public string groupName;
-
+        public GroupType groupType;
         public Group(string name, GroupItem item)
         {
             groupName = name;
@@ -96,6 +100,45 @@ namespace ACE.Groups {
                 m_Items.Remove(i);
                 i.m_Group = new Group(i.gameObject.name, i);
                 i.groupName = i.m_Group.groupName;
+            }
+        }
+        public void CheckIfGroupIsLogical()
+        {
+            GoalManager manager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<GoalManager>();
+            List<Goal> listOfGoals = new List<Goal>();
+            foreach(GroupItem i in m_Items)
+            {
+                Goal j = manager.GetGameObjectGoal(i.gameObject);
+                if(j != null)
+                {
+                    listOfGoals.Add(i);
+                }
+            }
+            List<int> numberOfTimeGoalOccours = new List<int>();
+            List<Goal> currentCheckedGoals = new List<Goal>();
+            foreach(Goal i in listOfGoals)
+            {
+                if (currentCheckedGoals.Contains(i))
+                {
+                    continue;
+                }
+                currentCheckedGoals.Add(i);
+                int numberOfTimesOcoured = 0;
+                foreach(Goal j in listOfGoals) {
+                    if(i == j)
+                    {
+                        numberOfTimesOcoured++;
+                    }
+                }
+                numberOfTimeGoalOccours.Add(numberOfTimesOcoured);
+            }
+            if(numberOfTimeGoalOccours.Count > 2)
+            {
+                groupType = GroupType.random;
+            }
+            else
+            {
+                groupType = GroupType.random;
             }
         }
     }

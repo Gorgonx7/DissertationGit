@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ACE.Goals;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,10 @@ namespace ACE.Groups
         public void addToGroup(Group pGroup)
         {
             m_Groups.Add(pGroup);
+        }
+        public List<Group> GetGroups()
+        {
+            return m_Groups;
         }
     }
 }

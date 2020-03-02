@@ -58,5 +58,21 @@ namespace ACE.Goals
         {
             return completedGoals.ToArray() ;
         }
+        /// <summary>
+        /// returns goal assocated with the game object, or null if no goal is associated with that object
+        /// </summary>
+        /// <param name="askingObject">object to ask for</param>
+        /// <returns>goal or null</returns>
+        public Goal GetGameObjectGoal(GameObject askingObject)
+        {
+            foreach(Goal i in GetComponents<Goal>())
+            {
+                if (i.importantItems.Contains(askingObject.name))
+                {
+                    return i;
+                }
+            }
+            return null;
+        }
     }
 }

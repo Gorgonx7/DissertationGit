@@ -16,6 +16,7 @@ namespace ACE.EvaulationSystem
         public override void Update()
         {
             currentRating = (int)(5 * GetPercentageOfCompletedTasks());
+            base.Update();
         }
         public float GetPercentageOfCompletedTasks()
         {
