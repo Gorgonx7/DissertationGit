@@ -16,6 +16,9 @@ TagManager:
   - EditableObject
   - Managers
   - SceneManager
+  - FxTemporaire
+  - projectile
+  - GroupSystem
   layers:
   - Default
   - TransparentFX

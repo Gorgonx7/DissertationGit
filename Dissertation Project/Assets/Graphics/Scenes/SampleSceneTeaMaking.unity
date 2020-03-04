@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17759393, g: 0.22234249, b: 0.30453533, a: 1}
+  m_IndirectSpecularColor: {r: 0.1775935, g: 0.22234176, b: 0.30453432, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -308,6 +308,7 @@ Transform:
   - {fileID: 715105616}
   - {fileID: 488604702}
   - {fileID: 387014465}
+  - {fileID: 1981651203}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -646,6 +647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646bc675765caab48b1b70bdab1d8aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HTIController: {fileID: 0}
+  ratingController: {fileID: 0}
+  organized: 0
 --- !u!114 &387014467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,6 +662,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20e406dc8ab0c81489fce4cffa9b6a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HTIController: {fileID: 0}
+  ratingController: {fileID: 0}
 --- !u!114 &387014468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2898,7 +2904,6 @@ MonoBehaviour:
   z_Matters: 1
   componentType: {fileID: 0}
   requiredState: FullKettle
-  trigger_Interaction: {fileID: 442672343}
   interactionObject: {fileID: 442672343}
   actionName: PourKettle
 --- !u!114 &1641660400
@@ -3237,6 +3242,36 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5117d4b930d3e7749a1573e5a429c547, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e89b872100cc91e4bbea38f393cb79f8, type: 3}
+--- !u!1 &1981651202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1981651203}
+  m_Layer: 0
+  m_Name: GroupManager
+  m_TagString: GroupSystem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1981651203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981651202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 99937131}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030595204
 GameObject:
   m_ObjectHideFlags: 0
@@ -3905,7 +3940,7 @@ PrefabInstance:
     - target: {fileID: 6437947166780527893, guid: a737f757e72441048baffd554c5a17a3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3745140419844875299, guid: a737f757e72441048baffd554c5a17a3,
         type: 3}
@@ -3921,6 +3956,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMin.y
       value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342604212918786599, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Planning
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603574997771026264, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_Name
+      value: Overall Rating
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077883220819856002, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077883220819856002, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -491
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268436132864273108, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_Name
+      value: RatingValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2077883220819856003, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_Text
+      value: Oveall Performance
+      objectReference: {fileID: 0}
+    - target: {fileID: 9184716303023157244, guid: a737f757e72441048baffd554c5a17a3,
+        type: 3}
+      propertyPath: m_Text
+      value: Planning
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a737f757e72441048baffd554c5a17a3, type: 3}

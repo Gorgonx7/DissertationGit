@@ -10,6 +10,14 @@ namespace ACE.Groups
     class GroupUpdate : MonoBehaviour
     {
         List<Group> m_Groups = new List<Group>();
+        private void Start()
+        {
+            GameObject[] KeyObjects = GameObject.FindGameObjectsWithTag("KeyItems");
+            foreach(GameObject i in KeyObjects)
+            {
+                i.AddComponent<GroupItem>();
+            }
+        }
         private void Update()
         {
             List<Group> groupsToRemove = new List<Group>();

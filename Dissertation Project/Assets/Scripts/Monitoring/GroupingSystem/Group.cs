@@ -9,7 +9,7 @@ using UnityEngine;
 namespace ACE.Groups {
     public enum GroupType
     {
-        logical, random
+        logical, random, singleItem
     }
     class Group
     {
@@ -102,8 +102,13 @@ namespace ACE.Groups {
                 i.groupName = i.m_Group.groupName;
             }
         }
-        public void CheckIfGroupIsLogical()
+        public GroupType CheckIfGroupIsLogical()
         {
+            if(m_Items.Count == 1)
+            {
+                groupType = GroupType.singleItem;
+                return groupType;
+            }
             GoalManager manager = GameObject.FindGameObjectWithTag("TaskManager").GetComponent<GoalManager>();
             List<Goal> listOfGoals = new List<Goal>();
             foreach(GroupItem i in m_Items)
@@ -111,7 +116,7 @@ namespace ACE.Groups {
                 Goal j = manager.GetGameObjectGoal(i.gameObject);
                 if(j != null)
                 {
-                    listOfGoals.Add(i);
+                    listOfGoals.Add(j);
                 }
             }
             List<int> numberOfTimeGoalOccours = new List<int>();
@@ -138,8 +143,9 @@ namespace ACE.Groups {
             }
             else
             {
-                groupType = GroupType.random;
+                groupType = GroupType.logical;
             }
+            return groupType;
         }
     }
 }

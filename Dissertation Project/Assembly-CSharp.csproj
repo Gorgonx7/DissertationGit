@@ -473,7 +473,7 @@
     <Compile Include="Assets\Scripts\Evaluation Systems\FinalScoreManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\GoalCompletionManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\MultitaskingManager.cs" />
-    <Compile Include="Assets\Scripts\Evaluation Systems\TimeCompletionManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\OrganizationManager.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GatherKeyObjects.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\Group.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GroupDistributor.cs" />
