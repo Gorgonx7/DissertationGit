@@ -11,6 +11,7 @@ namespace ACE.EvaulationSystem
         // Start is called before the first frame update
         void Start()
         {
+            currentImprovementPoints.Clear();
             groupManager = GameObject.FindGameObjectWithTag("GroupSystem").GetComponent<GroupUpdate>();
 
         }
@@ -18,7 +19,7 @@ namespace ACE.EvaulationSystem
         // Update is called once per frame
         public override void Update()
         {
-
+            currentRating = (int)Mathf.Floor(5 * RateOrganization());
             base.Update();
         }
         public float RateOrganization()
@@ -42,7 +43,21 @@ namespace ACE.EvaulationSystem
                         break;
                 }
             }
-         
+            if(randomGroups > logicalGroups)
+            {
+                currentImprovementPoints.Add("Try to place objects together that are  as you go");
+            }
+            if (randomGroups > 0 || singleGroups > 0)
+            {
+                
+                return (logicalGroups / singleGroups + randomGroups);
+            }
+            else
+            {
+                return 1;
+            }
+
+            
         }
     }
 }

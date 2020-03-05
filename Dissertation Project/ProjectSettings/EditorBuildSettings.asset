@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Graphics/Scenes/CalibrationScene.unity
     guid: 94437be345ab24f4186af14b7e5aa239
   - enabled: 1
     path: Assets/Graphics/Scenes/SampleSceneTeaMaking.unity
     guid: 5cd88eeb8e03ba24e86f0f0b83d36403
-  - enabled: 1
+  - enabled: 0
     path: Assets/Graphics/Scenes/MainMenu.unity
     guid: f8677ba810438194aad443803f21df96
-  - enabled: 1
+  - enabled: 0
     path: Assets/Graphics/Scenes/ObjectBuilder.unity
     guid: 6ab3e8ea01e88cc4db7410deb84e69ad
-  - enabled: 1
+  - enabled: 0
     path: Assets/Graphics/Scenes/RoomBuilder.unity
     guid: 380f5fb543042844d8e87831673bd54a
   m_configObjects: {}

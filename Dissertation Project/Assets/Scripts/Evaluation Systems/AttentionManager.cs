@@ -62,6 +62,10 @@ namespace ACE.EvaulationSystem
             float totalTimeItemsInCentre = 0.0f;
             foreach (SeenBehaviour i in goalSeenBehaviours)
             {
+                if(i == null)
+                {
+                    continue;
+                }
                 totalTimeSepentLookingAtItems += i.GetTimeInFrame();
                 totalTimeItemsInPerifieral += i.GetTimeInPeriferal();
                 totalTimeItemsInCentre += i.GetTimeInFocus();

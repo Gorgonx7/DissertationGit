@@ -12,10 +12,10 @@ public class SeenBehaviour : MonoBehaviour
     GameObject glowHolder;
     Camera vrCamera;
 
-    float lastSeentime;
-    float totalTimeSpentInFrame;
-    float totalTimeSpentInCentre;
-    float totalTimeSpentInPeriferal;
+    float lastSeentime = 0.0f;
+    float totalTimeSpentInFrame = 0.0f;
+    float totalTimeSpentInCentre = 0.0f;
+    float totalTimeSpentInPeriferal = 0.0f;
     bool isSeen = false;
     private void Start()
     {
@@ -37,7 +37,14 @@ public class SeenBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vrCamera = GameObject.Find("VRCamera").GetComponent<Camera>();
+        try
+        {
+            vrCamera = GameObject.Find("VRCamera").GetComponent<Camera>();
+        }
+        catch
+        {
+            return;
+        }
         Vector3 ScreenPosition = Camera.main.WorldToViewportPoint(gameObject.transform.position);
         float isInFront = gameObject.transform.position.z * Camera.main.transform.position.z;
         RaycastHit hit;

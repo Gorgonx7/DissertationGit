@@ -12,7 +12,7 @@ namespace ACE.Groups
         List<Group> m_Groups = new List<Group>();
         private void Start()
         {
-            GameObject[] KeyObjects = GameObject.FindGameObjectsWithTag("KeyItems");
+            GameObject[] KeyObjects = GameObject.FindGameObjectsWithTag("KeyItem");
             foreach(GameObject i in KeyObjects)
             {
                 i.AddComponent<GroupItem>();

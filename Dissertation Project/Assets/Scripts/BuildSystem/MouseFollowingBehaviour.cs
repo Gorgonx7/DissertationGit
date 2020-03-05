@@ -23,7 +23,11 @@ public class MouseFollowingBehaviour : MonoBehaviour
             
             gameObject.transform.position = Camera.main.ScreenToWorldPoint(mouseVector);
        }
-      
+        RaycastHit hit;
+       if(Physics.Raycast(gameObject.transform.position, -Vector3.up, out hit))
+        {
+            hit.
+        }
     }
     
 }

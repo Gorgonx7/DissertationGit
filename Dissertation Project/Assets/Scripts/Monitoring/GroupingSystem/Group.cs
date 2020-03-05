@@ -20,7 +20,7 @@ namespace ACE.Groups {
         {
             groupName = name;
             m_Items.Add(item);
-            GameObject.FindGameObjectWithTag("Managers").GetComponent<GroupUpdate>().addToGroup(this);
+            GameObject.FindGameObjectWithTag("GroupSystem").GetComponent<GroupUpdate>().addToGroup(this);
         }
         public void initialiseGroups(List<string> items)
         {
@@ -65,18 +65,38 @@ namespace ACE.Groups {
         }
         private void cleanItems()
         {
+            List<GroupItem> itemsToRemove = new List<GroupItem>(); 
+            List<GroupItem> itemsToDestroy = new List<GroupItem>();
             
             foreach(GroupItem i in m_Items)
             {
                 if(i == null)
                 {
-                    m_Items.Remove(i);
+                    itemsToRemove.Add(i);
+                    
+                }
+                else if(i.gameObject.GetComponents<GroupItem>().Length > 1)
+                {
+                    itemsToRemove.Add(i);
+                    itemsToDestroy.Add(i);
+                    
                 }
             }
+            foreach(GroupItem i in itemsToRemove)
+            {
+                m_Items.Remove(i);
+                if (itemsToDestroy.Contains(i))
+                {
+                    i.remove();
+                }
+            }
+
+
         }
         public void CheckGroupMembership()
         {
             cleanItems();
+
             Vector3 Centroid = GetGroupCenter();
             Collider[] groupCollisions = Physics.OverlapSphere(Centroid, 3);
             List<GameObject> objectsStillInGroup = new List<GameObject>();

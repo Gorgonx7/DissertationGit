@@ -8,7 +8,7 @@ namespace ACE.Groups
 {
     class GroupItem : MonoBehaviour
     {
-        public float StartRadius;
+        public float StartRadius = 1f;
         private float m_Radius;
         public string groupName;
         public Group m_Group;
@@ -24,6 +24,19 @@ namespace ACE.Groups
         }
         private void Update()
         {
+
+            if(m_Group == null)
+            {
+                m_Group = new Group(gameObject.name, this);
+
+
+                groupName = m_Group.groupName;
+            }
+            else
+            {
+                groupName = m_Group.groupName;
+            }
+
             Vector3 centre = gameObject.transform.position;
             
             if(m_Group.GetNumberOfMembers() == 1)
@@ -75,6 +88,11 @@ namespace ACE.Groups
             m_Group.removeItem(this);
             m_Group = null;
             m_Group = new Group(gameObject.name, this);
+        }
+
+        public void remove()
+        {
+            Destroy(this);
         }
     }
 }
