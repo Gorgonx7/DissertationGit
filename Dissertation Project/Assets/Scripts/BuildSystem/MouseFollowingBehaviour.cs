@@ -26,7 +26,12 @@ public class MouseFollowingBehaviour : MonoBehaviour
         RaycastHit hit;
        if(Physics.Raycast(gameObject.transform.position, -Vector3.up, out hit))
         {
-            hit.
+            Vector3 hitPoint = hit.point;
+            Vector3 bottomPoint = GetComponent<MeshCollider>().bounds.ClosestPoint(hitPoint);
+            //Calculate the distance from the middle to the bottom
+            float distance = Vector3.Distance(bottomPoint, gameObject.transform.position);
+            //Calculate the y position;
+
         }
     }
     

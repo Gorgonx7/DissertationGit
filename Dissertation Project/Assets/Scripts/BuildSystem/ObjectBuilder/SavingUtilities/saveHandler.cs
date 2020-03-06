@@ -19,19 +19,22 @@ public class saveHandler : MonoBehaviour
     public void Save()
     {
         GameObject objectToSave = CreateFinalGameObjectToSave();
-        if (Grabbable.isOn)
+        if (Grabbable != null)
         {
-            GameObject col = box.GetCollisionBox();
-            
-            Destroy(col.GetComponent<GrabBoxScript>());
-            
-            col.name = "Handle";
-            col.transform.parent = objectToSave.transform;
+            if (Grabbable.isOn)
+            {
+                GameObject col = box.GetCollisionBox();
+
+                Destroy(col.GetComponent<GrabBoxScript>());
+
+                col.name = "Handle";
+                col.transform.parent = objectToSave.transform;
+            }
         }
         objectToSave.AddComponent<Rigidbody>();
         objectToSave.AddComponent<MeshCollider>().convex = true;
         GameObjectCaretaker saver = new GameObjectCaretaker();
-        objectToSave.name = "TestObjectPleaseWork";
+        objectToSave.name = GameObject.FindGameObjectWithTag("EditableObject").name;
         saver.SaveObject(objectToSave);
         string CopyLoction = saver.LocationFileSaved;
         string locationOfOBJFile = objectLoader.objString;

@@ -8,6 +8,7 @@ namespace Assets.SaveFileLoadingSystem
     class SceneCaretaker
     {
         private const string SCENESAVESTRING = @"./UDO/Scenes/";
+        private string LastSavedScene;
         public GameObject[] LoadScene()
         {
             return null;
@@ -18,6 +19,7 @@ namespace Assets.SaveFileLoadingSystem
             {
                 Directory.CreateDirectory(SCENESAVESTRING + "/" + SceneName);
             }
+            LastSavedScene = SCENESAVESTRING + "/" + SceneName + "/";
             StreamWriter stream = new StreamWriter(SCENESAVESTRING + "/" + SceneName + "/" + SceneName + ".xml");
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
@@ -36,6 +38,9 @@ namespace Assets.SaveFileLoadingSystem
             writer.Flush();
             writer.Close();
         }
-
+        public string GetLastFileLocation()
+        {
+            return LastSavedScene;
+        }
     }
 }

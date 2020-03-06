@@ -16,6 +16,10 @@ namespace ACE.Goals
         public static void LoadGoal(string FileName, GameObject taskManager)
         {
             List<Goal> loadedGoals = new List<Goal>();
+            if (!Directory.Exists(GOALFILELOCATION))
+            {
+                return;
+            }
             StreamReader stream = new StreamReader(GOALFILELOCATION + FileName + ".xml");
             XmlReader reader = XmlReader.Create(stream);
             Goal goalToEdit = null;

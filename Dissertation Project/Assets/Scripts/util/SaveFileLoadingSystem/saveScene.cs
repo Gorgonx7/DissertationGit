@@ -9,6 +9,7 @@ public class saveScene : MonoBehaviour
     BuildController control;
     public GameObject saveName;
     private string saveText;
+    public ScreenShotController camera;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +33,6 @@ public class saveScene : MonoBehaviour
         saveText = saveName.GetComponent<Text>().text;
         SceneCaretaker sceneCaretaker = new SceneCaretaker();
         sceneCaretaker.SaveScene(ObjectNamesToSave, objectLocations, saveText);
-
+        camera.CamCapture(sceneCaretaker.GetLastFileLocation());
     }
 }
