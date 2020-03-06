@@ -16,13 +16,14 @@ public class MouseFollowingBehaviour : MonoBehaviour
     void Update()
     {
        
-        Vector3 mouseVector = Input.mousePosition;
+        Vector3 mouseVector = Input.mousePosition;        
         mouseVector.z += 10.0f;
-       if(!(mouseVector.x == 0.0f || mouseVector.y == 0 ||  mouseVector.x >= Screen.width - 1 || mouseVector.y >= Screen.height - 1))
-       {
-            
-            gameObject.transform.position = Camera.main.ScreenToWorldPoint(mouseVector);
-       }
+        Vector3 predictedPosition = Camera.main.ScreenToWorldPoint(mouseVector);
+        //  if(!(mouseVector.x == 0.0f || mouseVector.y == 0 ||  mouseVector.x >= Screen.width - 1 || mouseVector.y >= Screen.height - 1))
+        //{
+
+        gameObject.transform.position = predictedPosition;
+      // }
         RaycastHit hit;
        if(Physics.Raycast(gameObject.transform.position, -Vector3.up, out hit))
         {

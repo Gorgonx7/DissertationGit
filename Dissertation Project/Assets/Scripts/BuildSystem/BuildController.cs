@@ -31,6 +31,7 @@ public class BuildController : MonoBehaviour
             Destroy(SelectedObject);
         }
         SelectedObject = Instantiate(obj);
+        SelectedObject.transform.position = new Vector3(0, 0, 0);
         SelectedObject.SetActive(true);
         SelectedObject.AddComponent<MouseFollowingBehaviour>();
 
