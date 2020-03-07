@@ -5,11 +5,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using Util.Interactables;
+using System;
+
 namespace ACE.Interactions {
     public class Interactable : InteractableCollision
     {
         private HintManager hintControl;
         // Start is called before the first frame update
+        public DateTime timeLastInteracted;
+        public float timeSinceInteracted;
         public override void Start()
         {
 
@@ -18,7 +22,10 @@ namespace ACE.Interactions {
         }
 
 
-
+        private void Update()
+        {
+            timeSinceInteracted += Time.deltaTime;
+        }
         public override void LogEvent()
         {
             // Not needed for this function as each interaction has its own logs
@@ -28,6 +35,7 @@ namespace ACE.Interactions {
         {
             if (isHandNear)
             {
+                timeSinceInteracted = 0;
                 LogManager.Log("interacted With: " + gameObject.name);
                 if (hintControl.doesCurrentFlashingContain(gameObject.transform.parent.gameObject))
                 {
@@ -42,6 +50,7 @@ namespace ACE.Interactions {
         {
             if (isHandNear)
             {
+                timeSinceInteracted = 0;
                 LogManager.Log("stopped interacted With: " + gameObject.name);
                 InteractionManager.registerInteraction(gameObject);
             }

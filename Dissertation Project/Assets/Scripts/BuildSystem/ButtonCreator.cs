@@ -10,7 +10,7 @@ public class ButtonCreator : MonoBehaviour
 {
   
     GameObject[] BuildableObjects;
-
+  
     GameObject[] ButtonArray;
     public GameObject buttonPrefab;
     void Start()

@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GoalPanelController.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerChanger.cs" />
@@ -461,6 +462,7 @@
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\Goal.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalLoader.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalManager.cs" />
+    <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalSaver.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalUI.cs" />
     <Compile Include="Assets\Scripts\Control systems\Levelmanager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\AttentionManager.cs" />
@@ -497,7 +499,6 @@
     <Compile Include="Assets\Scripts\UI Scripts\ScaleController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ScriptDropDownInit.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\selectionHandler.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\UI_Controller.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\UIChanger.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\Grabable.cs" />
@@ -518,7 +519,6 @@
     <Compile Include="Assets\Scripts\util\misc\DoesPlayerExist.cs" />
     <Compile Include="Assets\Scripts\util\misc\FileName.cs" />
     <Compile Include="Assets\Scripts\util\misc\GlobalVariables.cs" />
-    <Compile Include="Assets\Scripts\util\misc\HelpTextBehaviour.cs" />
     <Compile Include="Assets\Scripts\util\misc\LoadRoom.cs" />
     <Compile Include="Assets\Scripts\util\misc\MeshCombiner.cs" />
     <Compile Include="Assets\Scripts\util\misc\resetComponent.cs" />
@@ -528,6 +528,7 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\GameObjectCaretaker.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\GameObjectSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\ISerializableComponent.cs" />
+    <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\loadScene.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\ObjectDirectoryManager.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\saveScene.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneCaretaker.cs" />
@@ -545,7 +546,6 @@
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\UIOverlay.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
-    <None Include="Assets\Scripts\util\SaveFileLoadingSystem\Notes.txt" />
     <None Include="Assets\Docs\GoalSystem.cd" />
     <None Include="Assets\Imports\JsonDotNet\link.xml" />
     <None Include="Assets\Graphics\Shaders\FillShader.shader" />
@@ -760,6 +760,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
@@ -768,9 +771,6 @@
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -1128,6 +1128,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Siccity.GLTFUtility.csproj">
+      <Project>{84F7680D-8DCB-C55F-3C74-59A5FEFD7A52}</Project>
+      <Name>Siccity.GLTFUtility</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{D94121B7-31EB-DBD3-AD19-C5FD840534FA}</Project>
       <Name>SteamVR_Actions</Name>
@@ -1140,6 +1144,10 @@
       <Project>{851ECEAA-22AB-07DB-23D7-3F6353640240}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj">
+      <Project>{03223D50-1D48-683F-A771-41359492DBD4}</Project>
+      <Name>Siccity.GLTFUtility.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
       <Project>{7A2C5696-90F1-207A-A611-E6D53C735850}</Project>
       <Name>SteamVR</Name>
@@ -1147,14 +1155,6 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{187AA3D8-0A09-ED86-676E-45244FCC6F1F}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="Siccity.GLTFUtility.csproj">
-      <Project>{84F7680D-8DCB-C55F-3C74-59A5FEFD7A52}</Project>
-      <Name>Siccity.GLTFUtility</Name>
-    </ProjectReference>
-    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj">
-      <Project>{03223D50-1D48-683F-A771-41359492DBD4}</Project>
-      <Name>Siccity.GLTFUtility.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

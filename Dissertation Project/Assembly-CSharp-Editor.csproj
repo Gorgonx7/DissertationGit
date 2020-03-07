@@ -304,6 +304,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
@@ -312,9 +315,6 @@
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>W:/DissertationGit/Dissertation Project/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -679,6 +679,10 @@
       <Project>{99E3390D-54CB-67EA-2FDA-16EDDF3B931E}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+    <ProjectReference Include="Siccity.GLTFUtility.csproj">
+      <Project>{84F7680D-8DCB-C55F-3C74-59A5FEFD7A52}</Project>
+      <Name>Siccity.GLTFUtility</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{D94121B7-31EB-DBD3-AD19-C5FD840534FA}</Project>
       <Name>SteamVR_Actions</Name>
@@ -691,6 +695,10 @@
       <Project>{851ECEAA-22AB-07DB-23D7-3F6353640240}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj">
+      <Project>{03223D50-1D48-683F-A771-41359492DBD4}</Project>
+      <Name>Siccity.GLTFUtility.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
       <Project>{7A2C5696-90F1-207A-A611-E6D53C735850}</Project>
       <Name>SteamVR</Name>
@@ -698,14 +706,6 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{187AA3D8-0A09-ED86-676E-45244FCC6F1F}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
-    </ProjectReference>
-    <ProjectReference Include="Siccity.GLTFUtility.csproj">
-      <Project>{84F7680D-8DCB-C55F-3C74-59A5FEFD7A52}</Project>
-      <Name>Siccity.GLTFUtility</Name>
-    </ProjectReference>
-    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj">
-      <Project>{03223D50-1D48-683F-A771-41359492DBD4}</Project>
-      <Name>Siccity.GLTFUtility.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,7 +10,7 @@ using UnityEngine;
 namespace ACE.Goals
 {
     //Goal files are xml files that define the name of objects and their state required for goal completion
-    class GoalLoader
+    public static class GoalLoader
     {
         const string GOALFILELOCATION = "./UDO/Goals/";
         public static void LoadGoal(string FileName, GameObject taskManager)
@@ -41,6 +41,7 @@ namespace ACE.Goals
                                 } else if(reader.Name == "goalObjectName")
                                 {
                                     goalToEdit.GoalObjectName = reader.Value;
+                                    GameObject.Find(reader.Value).tag = "KeyItem";
                                 }
                             }
                         
