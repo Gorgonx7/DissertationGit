@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ActionDefinitionsController.cs" />
     <Compile Include="Assets\GoalPanelController.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
@@ -432,6 +433,8 @@
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
+    <Compile Include="Assets\inputEventButtonController.cs" />
+    <Compile Include="Assets\panelController.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanCompleteAGoal.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanSaveDefaultGameObject.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\attatchBuildObject.cs" />
