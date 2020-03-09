@@ -14,8 +14,11 @@ namespace ACE.FileSystem
     {
         public static void LoadPlayerCreatedScene(string fileName)
         {
+            if(fileName == "SampleScene")
+            {
+                SceneManager.LoadScene("CalibrationScene", LoadSceneMode.Single);
 
-            if (Directory.Exists("./UDO/Scenes/" + fileName))
+            } else if (Directory.Exists("./UDO/Scenes/" + fileName))
             {
                 SceneManager.LoadScene("PlayerCreatedScene", LoadSceneMode.Single);
                 SceneCaretaker caretaker = new SceneCaretaker();

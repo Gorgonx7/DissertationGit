@@ -437,6 +437,7 @@
     <Compile Include="Assets\panelController.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanCompleteAGoal.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanSaveDefaultGameObject.cs" />
+    <Compile Include="Assets\RoomLoadSelectionButtonControlScript.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\attatchBuildObject.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\BuildController.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\ButtonCreator.cs" />
@@ -520,7 +521,6 @@
     <Compile Include="Assets\Scripts\util\misc\clockAnimator.cs" />
     <Compile Include="Assets\Scripts\util\misc\ConfigureHeight.cs" />
     <Compile Include="Assets\Scripts\util\misc\DoesPlayerExist.cs" />
-    <Compile Include="Assets\Scripts\util\misc\FileName.cs" />
     <Compile Include="Assets\Scripts\util\misc\GlobalVariables.cs" />
     <Compile Include="Assets\Scripts\util\misc\LoadRoom.cs" />
     <Compile Include="Assets\Scripts\util\misc\MeshCombiner.cs" />
@@ -538,6 +538,8 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
+    <Compile Include="Assets\SelectionPanalController.cs" />
+    <Compile Include="Assets\setHeight.cs" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />
     <None Include="Assets\Graphics\Shaders\EmptyShader.shader" />
     <None Include="Assets\Docs\LogSystem.cd" />
@@ -557,34 +559,31 @@
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -764,16 +763,16 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ookii.Dialogs">
-      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>W:/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -1131,10 +1130,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Siccity.GLTFUtility.csproj">
-      <Project>{84F7680D-8DCB-C55F-3C74-59A5FEFD7A52}</Project>
-      <Name>Siccity.GLTFUtility</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
       <Project>{D94121B7-31EB-DBD3-AD19-C5FD840534FA}</Project>
       <Name>SteamVR_Actions</Name>
@@ -1147,10 +1142,6 @@
       <Project>{851ECEAA-22AB-07DB-23D7-3F6353640240}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj">
-      <Project>{03223D50-1D48-683F-A771-41359492DBD4}</Project>
-      <Name>Siccity.GLTFUtility.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
       <Project>{7A2C5696-90F1-207A-A611-E6D53C735850}</Project>
       <Name>SteamVR</Name>
@@ -1158,6 +1149,14 @@
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
       <Project>{187AA3D8-0A09-ED86-676E-45244FCC6F1F}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="Siccity.GLTFUtility.csproj">
+      <Project>{84F7680D-8DCB-C55F-3C74-59A5FEFD7A52}</Project>
+      <Name>Siccity.GLTFUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="Siccity.GLTFUtility.Editor.csproj">
+      <Project>{03223D50-1D48-683F-A771-41359492DBD4}</Project>
+      <Name>Siccity.GLTFUtility.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

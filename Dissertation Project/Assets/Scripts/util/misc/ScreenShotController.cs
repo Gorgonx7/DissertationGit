@@ -2,6 +2,7 @@
 using System.IO;
 using UnityEngine;
 
+
 public class ScreenShotController : MonoBehaviour
 {
 
@@ -49,5 +50,15 @@ public class ScreenShotController : MonoBehaviour
             return;
         }
         File.WriteAllBytes(folderLocation[0] + "screenshot.png", Bytes);
+    }
+    public static Texture2D LoadTexture(string fileLocation)
+    {
+       
+        byte[] textureInfo = File.ReadAllBytes(fileLocation);
+       
+        Texture2D output = new Texture2D(2, 2, TextureFormat.RGBA32, false) ;
+        output.LoadImage(textureInfo);
+        return output;
+
     }
 }
