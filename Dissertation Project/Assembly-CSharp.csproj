@@ -63,9 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ConfigureHeight.cs" />
-    <Compile Include="Assets\FileName.cs" />
-    <Compile Include="Assets\HowToImproveController.cs" />
+    <Compile Include="Assets\ActionDefinitionsController.cs" />
+    <Compile Include="Assets\GoalPanelController.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[003 - Pointers] BezierPointer\Scripts\VRTKExample_BezierPointerChanger.cs" />
@@ -434,11 +433,10 @@
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserLinux.cs" />
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserMac.cs" />
     <Compile Include="Assets\Imports\StandaloneFileBrowser\StandaloneFileBrowserWindows.cs" />
-    <Compile Include="Assets\LoadRoom.cs" />
-    <Compile Include="Assets\RatingController.cs" />
+    <Compile Include="Assets\inputEventButtonController.cs" />
+    <Compile Include="Assets\panelController.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanCompleteAGoal.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanSaveDefaultGameObject.cs" />
-    <Compile Include="Assets\ScaleController.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\attatchBuildObject.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\BuildController.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\ButtonCreator.cs" />
@@ -467,14 +465,17 @@
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\Goal.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalLoader.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalManager.cs" />
+    <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalSaver.cs" />
     <Compile Include="Assets\Scripts\Control systems\Goal Management System\GoalUI.cs" />
     <Compile Include="Assets\Scripts\Control systems\Levelmanager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\AttentionManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\EvaluationManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\FinalScoreManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\GoalCompletionManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\HowToImproveController.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\MultitaskingManager.cs" />
     <Compile Include="Assets\Scripts\Evaluation Systems\OrganizationManager.cs" />
+    <Compile Include="Assets\Scripts\Evaluation Systems\RatingController.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GatherKeyObjects.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\Group.cs" />
     <Compile Include="Assets\Scripts\Monitoring\GroupingSystem\GroupDistributor.cs" />
@@ -498,8 +499,10 @@
     <Compile Include="Assets\Scripts\UI Scripts\drawControllerLine.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\monitorCameraUIController.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ReloadSceneUI.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\ScaleController.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\ScriptDropDownInit.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\selectionHandler.cs" />
-    <Compile Include="Assets\Scripts\UI Scripts\UI_Controller.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\UIChanger.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\Grabable.cs" />
     <Compile Include="Assets\Scripts\util\Interactables\Grabber.cs" />
@@ -515,25 +518,26 @@
     <Compile Include="Assets\Scripts\util\LogUtil\LogReader.cs" />
     <Compile Include="Assets\Scripts\util\LogUtil\LogWriter.cs" />
     <Compile Include="Assets\Scripts\util\misc\clockAnimator.cs" />
+    <Compile Include="Assets\Scripts\util\misc\ConfigureHeight.cs" />
     <Compile Include="Assets\Scripts\util\misc\DoesPlayerExist.cs" />
+    <Compile Include="Assets\Scripts\util\misc\FileName.cs" />
     <Compile Include="Assets\Scripts\util\misc\GlobalVariables.cs" />
-    <Compile Include="Assets\Scripts\util\misc\HelpTextBehaviour.cs" />
+    <Compile Include="Assets\Scripts\util\misc\LoadRoom.cs" />
     <Compile Include="Assets\Scripts\util\misc\MeshCombiner.cs" />
     <Compile Include="Assets\Scripts\util\misc\resetComponent.cs" />
+    <Compile Include="Assets\Scripts\util\misc\SceneSwitcher.cs" />
     <Compile Include="Assets\Scripts\util\misc\ScreenShotController.cs" />
     <Compile Include="Assets\Scripts\util\misc\worldAnchor.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\GameObjectCaretaker.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\GameObjectSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\ISerializableComponent.cs" />
+    <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\loadScene.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\ObjectDirectoryManager.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\saveScene.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneCaretaker.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SceneSchema.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
-    <Compile Include="Assets\Scripts\util\SceneSwitcher.cs" />
-    <Compile Include="Assets\Scripts\util\ScriptDropDownInit.cs" />
-    <Compile Include="Assets\UI\UIChanger.cs" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />
     <None Include="Assets\Graphics\Shaders\EmptyShader.shader" />
     <None Include="Assets\Docs\LogSystem.cd" />
@@ -543,43 +547,44 @@
     <None Include="Assets\Shaders\FillShader.shader" />
     <None Include="Assets\Graphics\Shaders\FlashShader.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\UIOverlay.shader" />
-    <None Include="Assets\LowpolyVegetationPackFree\Readme.txt" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\VRTK_OutlineBasic.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\AdaptiveQualityDebugVisualization.shader" />
-    <None Include="Assets\Scripts\util\SaveFileLoadingSystem\Notes.txt" />
     <None Include="Assets\Docs\GoalSystem.cd" />
-    <None Include="Assets\JsonDotNet\link.xml" />
+    <None Include="Assets\Imports\JsonDotNet\link.xml" />
     <None Include="Assets\Graphics\Shaders\FillShader.shader" />
     <None Include="Assets\Imports\Imported_Assets\Kitchen Asset\README.txt" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\VRTK_TunnelEffect.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -758,17 +763,17 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

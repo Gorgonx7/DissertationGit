@@ -63,44 +63,44 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GLTFUtility-master\Scripts\BufferedBinaryReader.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Converters\ColorConverter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Converters\EnumConverter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Converters\Matrix4x4Converter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Converters\QuaternionConverter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Converters\TranslationConverter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Converters\Vector3Converter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Enums.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Exporter.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Extensions.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Importer.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Settings\ImportSettings.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Settings\ShaderSettings.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFAccessor.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFAnimation.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFAsset.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFBuffer.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFBufferView.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFCamera.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFImage.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFMaterial.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFMesh.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFNode.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFObject.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFPrimitive.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFProperty.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFScene.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFSkin.cs" />
-    <Compile Include="Assets\GLTFUtility-master\Scripts\Spec\GLTFTexture.cs" />
-    <None Include="Assets\GLTFUtility-master\Materials\Standard-Specular-Blend.shader" />
-    <None Include="Assets\GLTFUtility-master\Materials\Standard-Metallic-Blend.shader" />
-    <None Include="Assets\GLTFUtility-master\Materials\Standard-Metallic.shader" />
-    <None Include="Assets\GLTFUtility-master\Materials\Standard-Specular.shader" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\BufferedBinaryReader.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Converters\ColorConverter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Converters\EnumConverter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Converters\Matrix4x4Converter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Converters\QuaternionConverter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Converters\TranslationConverter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Converters\Vector3Converter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Enums.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Exporter.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Extensions.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Importer.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Settings\ImportSettings.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Settings\ShaderSettings.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFAccessor.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFAnimation.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFAsset.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFBuffer.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFBufferView.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFCamera.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFImage.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFMaterial.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFMesh.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFNode.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFObject.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFPrimitive.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFProperty.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFScene.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFSkin.cs" />
+    <Compile Include="Assets\Imports\GLTFUtility-master\Scripts\Spec\GLTFTexture.cs" />
+    <None Include="Assets\Imports\GLTFUtility-master\Materials\Standard-Specular-Blend.shader" />
+    <None Include="Assets\Imports\GLTFUtility-master\Materials\Standard-Metallic-Blend.shader" />
+    <None Include="Assets\Imports\GLTFUtility-master\Materials\Standard-Metallic.shader" />
+    <None Include="Assets\Imports\GLTFUtility-master\Materials\Standard-Specular.shader" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -291,17 +291,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ookii.Dialogs">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Forms">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
-      <HintPath>D:/Users/James Gordon/Desktop/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

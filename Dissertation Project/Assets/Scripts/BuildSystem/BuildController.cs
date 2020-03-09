@@ -15,7 +15,7 @@ public class BuildController : MonoBehaviour
     
     void Update()
     {
-        //TODO Fix this so that when an object is left clicked it can be placed but not if selecting a new object
+
        if(SelectedObject != null)
         {
             if (Input.GetMouseButtonDown(1))
@@ -31,6 +31,7 @@ public class BuildController : MonoBehaviour
             Destroy(SelectedObject);
         }
         SelectedObject = Instantiate(obj);
+        SelectedObject.transform.position = new Vector3(0, 0, 0);
         SelectedObject.SetActive(true);
         SelectedObject.AddComponent<MouseFollowingBehaviour>();
 

@@ -79,7 +79,7 @@ namespace ACE.EvaulationSystem
             // so these values are all between 0-1,  however they are not a fully true value of attention because there may be influences such as search time, which could greatly inflate this value.
             // we need to work out how much time should be spent on this specific task to know how well they did with paying attention to it, we can figure this out by using the total time spent interacting with the objects as a guide
             // following the logic above, if we added them together they would be somevalue /3. which is a quater of this, multiply this by the magic value of 1.25
-            //TODO Refactor
+
             output = (fractionOfTimeInPeriferal * 0.25f) + (fractionOfTimeInCentre * 0.75f);
             // this currently produces a value between 0-1 so I need to refactor to generate a better 
             return output;

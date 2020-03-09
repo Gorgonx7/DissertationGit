@@ -34,8 +34,7 @@ namespace ACE.Event_System
         public bool invert;
         //Sets if X Y or Z matters to the trigger
         public bool x_Matters, y_Matters, z_Matters;
-        //Used to define a component type that a object has to have if a collision is present
-        public Component componentType;
+
         public string requiredState = null;
         private ACE_Event EmittingEvent;
         public ACE_Interaction interactionObject;
@@ -45,6 +44,19 @@ namespace ACE.Event_System
         public string actionName;
         List<GameObject> previousFrameInteractedObjects = new List<GameObject>();
         // Start is called before the first frame update
+        public void ConfigureAction(string actionName, GameObject targetObject, Vector3 transformTrigger, Grabable grabTrigger, bool inverted, bool xMat, bool yMat, bool zMat, string requiredState)
+        {
+            this.actionName = actionName;
+            target = targetObject;
+            this.transformTrigger = transformTrigger;
+            this.GrabTrigger = grabTrigger;
+            this.invert = inverted;
+            this.x_Matters = xMat;
+            this.y_Matters = yMat;
+            this.z_Matters = zMat;
+            this.requiredState = requiredState;
+            
+        }
         void Start()
         {
             if (actionName == "") throw new Exception("Action name can not be set to null");

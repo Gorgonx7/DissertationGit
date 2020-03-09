@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// This is the root of the Task Management System, or the Goal System.
 /// The objective of this system is to monitor the current scene for any changes in object state that may lead directly
@@ -20,7 +21,7 @@ namespace ACE.Goals
     {
         //List of completed Goals
         private static List<Goal> completedGoals = new List<Goal>();
-
+        private bool Loaded = false;
         /// <summary>
         /// Static method that is called when a goal detects itself as complete
         /// </summary>
@@ -35,9 +36,17 @@ namespace ACE.Goals
         // Start is called before the first frame update
         void Start()
         {
-            GoalLoader.LoadGoal("Sample", gameObject);
+            if (SceneManager.GetActiveScene().name == "SampleSceneTeaMaking")
+            {
+                Load("Sample");
+            }
         }
+        public void Load(string filename)
+        {
+            GoalLoader.LoadGoal(filename, gameObject);
+            Loaded = true;
 
+        }
         // Update is called once per frame
         void Update()
         {

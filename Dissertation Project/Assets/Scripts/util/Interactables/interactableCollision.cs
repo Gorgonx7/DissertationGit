@@ -9,7 +9,6 @@ using Valve.VR;
 
 namespace Util.Interactables
 {
-    //todo: make this standard throughout the entire system
     public abstract class InteractableCollision : IVREvent
     {
         protected bool isHandNear = false;
