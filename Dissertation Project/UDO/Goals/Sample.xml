@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+<GoalSet>
 <Goal goalName="Make a Cup of Tea" goalObjectName="Tea">
     <GoalItem name="Teabag" />
     <GoalItem name="Milk" />
@@ -6,3 +7,4 @@
     <GoalItem name="EmptyKettle" />
     <GoalItem name="FullKettle" />
 </Goal>
+</GoalSet>

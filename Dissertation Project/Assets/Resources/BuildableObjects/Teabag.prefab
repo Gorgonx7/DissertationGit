@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 774295782957547690}
   - component: {fileID: 774295782957547701}
   m_Layer: 0
-  m_Name: teabag
+  m_Name: Teabag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8763781671910532701}
   m_LocalRotation: {x: -0.5157513, y: 0.4837361, z: -0.48373607, w: 0.51575136}
-  m_LocalPosition: {x: 0.15, y: 1.333, z: 2.053}
+  m_LocalPosition: {x: 0.1, y: 0, z: 10.6}
   m_LocalScale: {x: 0.38530487, y: 2.9945765, z: 5.95784}
   m_Children:
   - {fileID: 774295782881310626}

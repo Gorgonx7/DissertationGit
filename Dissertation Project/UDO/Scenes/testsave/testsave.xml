@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scene Name="testsave" GoalFile="testsave">
+  <Teabag Position="(0.1, 0.0, 10.6)" />
+  <Sink Position="(-2.6, 0.0, 13.2)" />
+</Scene>
