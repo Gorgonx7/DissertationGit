@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 90122327}
   - component: {fileID: 90122326}
   - component: {fileID: 90122325}
-  m_Layer: 9
+  m_Layer: 5
   m_Name: Camera (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4275,7 +4275,7 @@ PrefabInstance:
     - target: {fileID: 4434560073823615775, guid: a737f757e72441048baffd554c5a17a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4434560073823615775, guid: a737f757e72441048baffd554c5a17a3,
         type: 3}
@@ -4290,7 +4290,7 @@ PrefabInstance:
     - target: {fileID: 4434560073823615775, guid: a737f757e72441048baffd554c5a17a3,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CamCapture
+      value: FolderSelectCamCapture
       objectReference: {fileID: 0}
     - target: {fileID: 4434560073823615775, guid: a737f757e72441048baffd554c5a17a3,
         type: 3}
