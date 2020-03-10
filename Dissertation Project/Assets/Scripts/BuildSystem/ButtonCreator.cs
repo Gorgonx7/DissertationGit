@@ -12,6 +12,7 @@ public class ButtonCreator : MonoBehaviour
     GameObject[] BuildableObjects;
   
     GameObject[] ButtonArray;
+    public GameObject parentObject;
     public GameObject buttonPrefab;
     void Start()
     {
@@ -22,6 +23,10 @@ public class ButtonCreator : MonoBehaviour
             if(i.GetComponent<Rigidbody>() != null)
             {
                 i.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                if(i.GetComponent<Collider>() == null)
+                {
+                    i.AddComponent<MeshCollider>();
+                }
             }
             i.SetActive(false);
         }
@@ -40,15 +45,10 @@ public class ButtonCreator : MonoBehaviour
             
             ButtonArray[x].GetComponent<RectTransform>().anchoredPosition = new Vector3((-GetComponent<RectTransform>().rect.width / 2 ) + ButtonArray[x].GetComponent<RectTransform>().rect.width, (GetComponent<RectTransform>().rect.height / 2) - ButtonArray[x].GetComponent<RectTransform>().rect.height, 0); 
             ButtonArray[x].transform.position += new Vector3(0,-(ButtonArray[x].GetComponent<RectTransform>().rect.height * x),0);
+            ButtonArray[x].transform.SetParent(parentObject.transform);
         }
         
 
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
     }
 }
