@@ -41,7 +41,13 @@ namespace ACE.Goals
                                 } else if(reader.Name == "goalObjectName")
                                 {
                                     goalToEdit.GoalObjectName = reader.Value;
-                                    GameObject.Find(reader.Value).tag = "KeyItem";
+                                    try
+                                    {
+                                        GameObject.Find(reader.Value).tag = "KeyItem";
+                                    }catch
+                                    {
+
+                                    }
                                 }
                             }
                         

@@ -15,14 +15,17 @@ public class BuildController : MonoBehaviour
     
     void Update()
     {
-
-       if(SelectedObject != null)
+        if (enabled)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (SelectedObject != null)
             {
-                SelectedObject.GetComponent<MouseFollowingBehaviour>().enabled = false;
-                PlacedObjects.Add(SelectedObject);
-                SelectedObject = null;
+                if (Input.GetMouseButtonDown(1))
+                {
+
+                    SelectedObject.GetComponent<MouseFollowingBehaviour>().enabled = false;
+                    PlacedObjects.Add(SelectedObject);
+                    SelectedObject = null;
+                }
             }
         }
     }
@@ -30,7 +33,19 @@ public class BuildController : MonoBehaviour
         if (SelectedObject != null) {
             Destroy(SelectedObject);
         }
+        
         SelectedObject = Instantiate(obj);
+        disableAllButMeshFilter(SelectedObject);
+        for(int i = 0; i < SelectedObject.transform.childCount; i++)
+        {
+            disableAllButMeshFilter(SelectedObject.transform.GetChild(i).gameObject);
+        }
+        Collider holder = SelectedObject.GetComponent<Collider>();
+        if(holder == null)
+        {
+            SelectedObject.AddComponent<MeshCollider>();
+        }
+
         SelectedObject.transform.position = new Vector3(0, 0, 0);
         SelectedObject.SetActive(true);
         SelectedObject.AddComponent<MouseFollowingBehaviour>();
@@ -39,5 +54,19 @@ public class BuildController : MonoBehaviour
     public GameObject[] GetPlacedObjects()
     {
         return PlacedObjects.ToArray();
+    }
+    private void disableAllButMeshFilter(GameObject obj)
+    {
+        MonoBehaviour[] objectComps = obj.GetComponents<MonoBehaviour>();
+        foreach (MonoBehaviour i in objectComps)
+        {
+            i.enabled = false;
+        }
+        if(SelectedObject.GetComponent<MeshRenderer>() != null)
+        {
+            SelectedObject.GetComponent<MeshRenderer>().enabled = true;
+
+        }
+
     }
 }

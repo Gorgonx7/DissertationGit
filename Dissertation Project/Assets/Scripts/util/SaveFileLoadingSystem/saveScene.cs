@@ -24,8 +24,8 @@ namespace ACE.FileSystem
         {
             saveText = saveName.GetComponent<Text>().text;
             GameObject[] placedObjects = control.GetPlacedObjects();
-            string[] ObjectNamesToSave = new string[placedObjects.Length];
-            Vector3[] objectLocations = new Vector3[placedObjects.Length];
+            string[] ObjectNamesToSave = new string[placedObjects.Length + 1];
+            Vector3[] objectLocations = new Vector3[placedObjects.Length + 1];
             for (int i = 0; i < placedObjects.Length; i++)
             {
                 string holder = placedObjects[i].name;
@@ -37,6 +37,8 @@ namespace ACE.FileSystem
                 ObjectNamesToSave[i] = holder;
                 objectLocations[i] = placedObjects[i].transform.position;
             }
+            GameObject floor = GameObject.FindGameObjectWithTag("Floor");
+            
             saveText = saveName.GetComponent<Text>().text;
             SceneCaretaker sceneCaretaker = new SceneCaretaker();
             GoalSaveStruct[] goalsToSave = GoalUIPannel.GetGoalsToSave();

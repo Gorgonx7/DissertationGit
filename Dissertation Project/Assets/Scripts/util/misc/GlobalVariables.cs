@@ -18,6 +18,30 @@ namespace Assets.Scripts.util.misc
                 _HeadsetHeight = value; 
             } 
         }
-
+        private static string _GoalXML = "Sample";
+        public static string GoalXML
+        {
+            get
+            {
+                return _GoalXML;
+            }
+            set
+            {
+                Debug.Log("Setting Goal XML location to " + value);
+                _GoalXML = value;
+            }
+        }
+        private static List<GameObject> _UDOsForScene = new List<GameObject>();
+        public static List<GameObject> UDOsForScene
+        {
+            get
+            {
+                return _UDOsForScene;
+            }
+            set
+            {
+                _UDOsForScene = value;
+            }
+        }
     }
 }

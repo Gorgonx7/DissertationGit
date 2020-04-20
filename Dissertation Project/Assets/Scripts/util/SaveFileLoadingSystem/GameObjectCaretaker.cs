@@ -69,6 +69,10 @@ namespace ACE.FileSystem
         string RecursiveLoadString = SAVEFILELOCATION;
         public GameObject LoadObject(string ObjectName)
         {
+            if(!Directory.Exists(SAVEFILELOCATION + ObjectName))
+            {
+                return Resources.Load<GameObject>("BuildableObjects/" + ObjectName);
+            }
             string originalString = RecursiveLoadString;
             RecursiveLoadString += ObjectName + "/";
             XmlSerializer serializer = new XmlSerializer(typeof(GameObjectSchema));
