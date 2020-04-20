@@ -9,7 +9,7 @@ namespace ACE.Event_System
     
     class ACE_Combine : MonoBehaviour
     {
-        public List<GameObject> CombineableObjects;
+        public List<GameObject> CombineableObjects = new List<GameObject>();
         public string StateString = "";
         public string statetoremove= "";
         public string combineName = "";

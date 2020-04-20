@@ -7,7 +7,7 @@ public class logController : MonoBehaviour
 {
     public Scrollbar scrollBar;
 
-    int currentTop = 0;
+
     public int maxValues;
     List<GameObject> log = new List<GameObject>();
     public GameObject logPrefab;

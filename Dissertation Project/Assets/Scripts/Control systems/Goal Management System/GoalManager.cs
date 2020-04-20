@@ -22,7 +22,9 @@ namespace ACE.Goals
     {
         //List of completed Goals
         private static List<Goal> completedGoals = new List<Goal>();
-        private bool Loaded = false;
+#pragma warning disable IDE0052 // Remove unread private members
+        bool Loaded = false;
+#pragma warning restore IDE0052 // Remove unread private members
         /// <summary>
         /// Static method that is called when a goal detects itself as complete
         /// </summary>

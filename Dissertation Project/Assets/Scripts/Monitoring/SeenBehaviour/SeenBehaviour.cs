@@ -14,7 +14,7 @@ public class SeenBehaviour : MonoBehaviour
 
     float lastSeentime = 0.0f;
     float totalTimeSpentInFrame = 0.0f;
-    float totalTimeSpentInCentre = 0.0f;
+
     float totalTimeSpentInPeriferal = 0.0f;
     bool isSeen = false;
     private void Start()
