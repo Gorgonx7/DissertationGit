@@ -17,6 +17,7 @@ public class LoadRoom : MonoBehaviour
         Destroy(currentRoom);
         GameObject result = Importer.LoadFromFile(objFileString[0]);
         result.transform.position = new Vector3(0, 0, 10);
+        result.tag = "Floor";
         currentRoom = result;
     }
 }

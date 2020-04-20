@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\ActionDefinitionsController.cs" />
+    <Compile Include="Assets\AddRoomObjects.cs" />
     <Compile Include="Assets\GoalPanelController.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[001 - Interactions] ControllerEvents\Scripts\VRTKExample_ControllerEventsDelegateListeners.cs" />
     <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SceneResources\[002 - Pointers] StraightPointer\Scripts\VRTKExample_PointerObjectHighlighterActivator.cs" />
@@ -539,10 +540,13 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs" />
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
     <Compile Include="Assets\setHeight.cs" />
+    <None Include="Assets\Docs\Group.cd" />
+    <None Include="Assets\Docs\ClassDiagram1.cd" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />
     <None Include="Assets\Graphics\Shaders\EmptyShader.shader" />
     <None Include="Assets\Docs\LogSystem.cd" />
     <None Include="Assets\Graphics\Shaders\shader2.shader" />
+    <None Include="Assets\Todo.txt" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Documentation.txt" />
     <None Include="Assets\Imports\LowpolyVegetationPackFree\Readme.txt" />
     <None Include="Assets\Shaders\FillShader.shader" />
@@ -558,6 +562,7 @@
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\TransparentFresnelBehind.shader" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Source\Scripts\Internal\Shaders\Unlit_TransparentColor.shader" />
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
       <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -586,6 +591,33 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> 2344cfae5753ce3e08aa8af1691ae1f97eb981e7
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -765,6 +797,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
+<<<<<<< HEAD
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ookii.Dialogs">
@@ -775,6 +808,18 @@
     </Reference>
     <Reference Include="Valve.Newtonsoft.Json">
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+=======
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Ookii.Dialogs">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>W:/discode/DissertationGit/Dissertation Project/Assets/SteamVR/Input/Plugins/JSON.NET/Valve.Newtonsoft.Json.dll</HintPath>
+>>>>>>> 2344cfae5753ce3e08aa8af1691ae1f97eb981e7
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.13f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Group Distributer distributes the groups on start. GroupUpdate controls all the groups and contains a list of the groups&#xD;&#xA;Each Group is responsible for it's own members and ensuring that it does not contain anything other then the items within its respective group">
+    <Position X="0.875" Y="2.042" Height="2.479" Width="1.7" />
+  </Comment>
+  <Class Name="ACE.Groups.Group">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <AssociationLine Name="List_GroupItem" Type="ACE.Groups.GroupItem" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="3.829" />
+        <Point X="6.165" Y="3.829" />
+        <Point X="6.165" Y="2.052" />
+        <Point X="7.375" Y="2.052" />
+        <Point X="7.375" Y="2.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAABQAAQAAAQAAEAACEAAAAAAAAAkAAAABAAAAABIA=</HashCode>
+      <FileName>Assets\Scripts\Monitoring\GroupingSystem\Group.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="List_GroupItem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ACE.Groups.GroupDistributor">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monitoring\GroupingSystem\GroupDistributor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.Groups.GroupItem">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAQCAIAAAEAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\Scripts\Monitoring\GroupingSystem\GroupItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.Groups.GroupUpdate">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="List_Group" Type="ACE.Groups.Group" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="1.567" />
+        <Point X="4.438" Y="1.567" />
+        <Point X="4.438" Y="1.437" />
+        <Point X="5.25" Y="1.437" />
+        <Point X="5.25" Y="1.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.065" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAEAAAAAAAAAACAEAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monitoring\GroupingSystem\GroupUpdate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="List_Group" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="ACE.Groups.GroupType">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Monitoring\GroupingSystem\Group.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

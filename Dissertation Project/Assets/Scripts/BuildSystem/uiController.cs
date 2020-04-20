@@ -8,7 +8,7 @@ public class uiController : MonoBehaviour
 {
     public void LoadDesign() {
         Debug.Log("Load Design");
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("RoomBuilder", LoadSceneMode.Single);
     }
     public void LoadObjectBuilder()
     {

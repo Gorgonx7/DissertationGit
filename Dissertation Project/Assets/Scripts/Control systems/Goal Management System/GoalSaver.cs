@@ -46,12 +46,15 @@ namespace ACE.Goals
             XmlWriterSettings settings = new XmlWriterSettings();
             settings.Indent = true;
             XmlWriter writer = XmlWriter.Create(stream, settings);
-            foreach(GoalSaveStruct i in saveStructs)
+            writer.WriteStartDocument();
+            writer.WriteStartElement("GoalSet");
+            foreach (GoalSaveStruct i in saveStructs)
             {
-                writer.WriteStartDocument();
+                
                 writer.WriteStartElement("Goal");
                 writer.WriteAttributeString("goalName", i.GetName());
                 writer.WriteAttributeString("goalObjectName", i.GetGoalObject());
+                
                 foreach(string j in i.GetGoalObjectNames())
                 {
                     writer.WriteStartElement("GoalItem");
@@ -60,6 +63,9 @@ namespace ACE.Goals
                 }
                 writer.WriteEndElement();
             }
+            writer.WriteEndElement();
+            writer.Flush();
+            writer.Close();
 
         }
     }

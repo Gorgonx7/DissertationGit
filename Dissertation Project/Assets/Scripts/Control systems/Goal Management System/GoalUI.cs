@@ -17,20 +17,23 @@ public class GoalUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Goal[] goals = GameObject.FindGameObjectWithTag("TaskManager").GetComponents<Goal>();
-        if(goals.Length != currentGoals.Length)
+        if (enabled)
         {
-            for(int i = 0; i < currentGoals.Length; i++)
+            Goal[] goals = GameObject.FindGameObjectWithTag("TaskManager").GetComponents<Goal>();
+            if (goals.Length != currentGoals.Length)
             {
-                Destroy(currentGoals[i]);
-            }
-            currentGoals = new GameObject[goals.Length];
+                for (int i = 0; i < currentGoals.Length; i++)
+                {
+                    Destroy(currentGoals[i]);
+                }
+                currentGoals = new GameObject[goals.Length];
 
-            for (int g = 0; g < goals.Length; g++)
-            {
-                currentGoals[g] = Instantiate(GoalTextPrefab);
-                currentGoals[g].transform.SetParent(gameObject.transform,false);
-                currentGoals[g].GetComponent<Text>().text = goals[g].m_GoalName;
+                for (int g = 0; g < goals.Length; g++)
+                {
+                    currentGoals[g] = Instantiate(GoalTextPrefab);
+                    currentGoals[g].transform.SetParent(gameObject.transform, false);
+                    currentGoals[g].GetComponent<Text>().text = goals[g].m_GoalName;
+                }
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using ACE.Goals;
 using Assets.SaveFileLoadingSystem;
+using Assets.Scripts.util.misc;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,6 +13,7 @@ namespace ACE.FileSystem
 {
     public static class loadScene
     {
+       
         public static void LoadPlayerCreatedScene(string fileName)
         {
             if(fileName == "SampleScene")
@@ -23,9 +25,11 @@ namespace ACE.FileSystem
                 SceneManager.LoadScene("PlayerCreatedScene", LoadSceneMode.Single);
                 SceneCaretaker caretaker = new SceneCaretaker();
                 PlayerDefinedScene Scene = caretaker.LoadScene(fileName);
-                GameObject goalManager = GameObject.FindGameObjectWithTag("TaskManager");
+                GlobalVariables.UDOsForScene = Scene.GetObjectArray().ToList();
+                
+                
                 // Load those goals
-                goalManager.GetComponent<GoalManager>().Load(Scene.GetGoalFileName());
+                GlobalVariables.GoalXML = Scene.GetGoalFileName();
                 //All objects should be deployed into the scene by default, no list of these objects is required because they are
                 // A) referenced by the unity engine
                 // B) referenced by the tag "Key Item"

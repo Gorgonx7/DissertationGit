@@ -1,4 +1,5 @@
 ﻿using Assets.LogUtil;
+using Assets.Scripts.util.misc;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,11 +37,12 @@ namespace ACE.Goals
         // Start is called before the first frame update
         void Start()
         {
-            if (SceneManager.GetActiveScene().name == "SampleSceneTeaMaking")
-            {
-                Load("Sample");
-            }
+            Debug.Log("calledstart");
+            
+                Load(GlobalVariables.GoalXML);
+            
         }
+       
         public void Load(string filename)
         {
             GoalLoader.LoadGoal(filename, gameObject);

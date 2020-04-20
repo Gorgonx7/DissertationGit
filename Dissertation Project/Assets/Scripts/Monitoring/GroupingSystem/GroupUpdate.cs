@@ -10,6 +10,15 @@ namespace ACE.Groups
     class GroupUpdate : MonoBehaviour
     {
         List<Group> m_Groups = new List<Group>();
+
+        internal Group List_Group
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Start()
         {
             GameObject[] KeyObjects = GameObject.FindGameObjectsWithTag("KeyItem");

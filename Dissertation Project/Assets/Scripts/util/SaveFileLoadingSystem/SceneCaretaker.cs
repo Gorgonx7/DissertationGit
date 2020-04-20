@@ -44,7 +44,9 @@ namespace ACE.FileSystem
                 StreamReader stream = new StreamReader(SCENESAVESTRING + "/" + SceneName + "/" + SceneName + ".xml");
                 XmlReaderSettings xmlReaderSettings = new XmlReaderSettings();
                 XmlReader reader = XmlReader.Create(stream, xmlReaderSettings);
-                reader.ReadStartElement();
+                reader.Read();
+                reader.Read();
+                reader.Read();
                 if(reader.Name == "Scene")
                 {
                     reader.MoveToNextAttribute();
@@ -66,6 +68,7 @@ namespace ACE.FileSystem
                                 GameObject holder = gameObjectSchema.LoadObject(reader.Name);
                                 reader.MoveToNextAttribute();
                                 holder.transform.position = StringToUnity.StringToVector3(reader.Value);
+                                ObjectsToLoad.Add(holder);
                                 break;
                             
                         }
