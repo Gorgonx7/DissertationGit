@@ -22,6 +22,15 @@ namespace ACE.Groups {
             m_Items.Add(item);
             GameObject.FindGameObjectWithTag("GroupSystem").GetComponent<GroupUpdate>().addToGroup(this);
         }
+
+        internal GroupItem List_GroupItem
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void initialiseGroups(List<string> items)
         {
             cleanItems();

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ACE.FileSystem.GameObjectCaretaker">
+    <Position X="1.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAIIAigAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\GameObjectCaretaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.FileSystem.GameObjectSchema" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAiAABAAACAAABAgAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\GameObjectSchema.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ACE.FileSystem.loadScene">
+    <Position X="7.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\loadScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.FileSystem.ObjectDirectoryManager">
+    <Position X="1.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\ObjectDirectoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.FileSystem.saveScene">
+    <Position X="8" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAACAABAAAAgAAAAAAAAAAAAgAAAIAAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\saveScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.FileSystem.SceneCaretaker">
+    <Position X="10.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAgAAAAAAAAAAAQAAAAACAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\SceneCaretaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACE.FileSystem.SerialisableComponent&lt;T&gt;" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="4" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAABEACAADwAAEAAAAAgEAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\SerialisableComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.335" Collapsed="true" />
+  </Class>
+  <Class Name="ACE.FileSystem.StringToUnity">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ACE.FileSystem.PlayerDefinedScene">
+    <Position X="1.5" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAACAAAAAAAgAAAARAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\SceneCaretaker.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="ACE.FileSystem.ISerializableComponent">
+    <Position X="8" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\util\SaveFileLoadingSystem\ISerializableComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

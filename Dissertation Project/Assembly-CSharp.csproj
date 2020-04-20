@@ -540,10 +540,13 @@
     <Compile Include="Assets\Scripts\util\SaveFileLoadingSystem\StringToUnity.cs" />
     <Compile Include="Assets\SelectionPanalController.cs" />
     <Compile Include="Assets\setHeight.cs" />
+    <None Include="Assets\Docs\Group.cd" />
+    <None Include="Assets\Docs\ClassDiagram1.cd" />
     <None Include="Assets\Graphics\Shaders\GlowShader.shader" />
     <None Include="Assets\Graphics\Shaders\EmptyShader.shader" />
     <None Include="Assets\Docs\LogSystem.cd" />
     <None Include="Assets\Graphics\Shaders\shader2.shader" />
+    <None Include="Assets\Todo.txt" />
     <None Include="Assets\Imports\Imported_Assets\VRTK\Documentation.txt" />
     <None Include="Assets\Imports\LowpolyVegetationPackFree\Readme.txt" />
     <None Include="Assets\Shaders\FillShader.shader" />

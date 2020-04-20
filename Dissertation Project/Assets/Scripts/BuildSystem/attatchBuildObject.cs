@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class attatchBuildObject : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     private GameObject BuildObjectPrefab;
     private BuildController BuildController;
     void Start()
