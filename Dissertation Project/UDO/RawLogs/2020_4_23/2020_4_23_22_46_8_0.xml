@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_23_22_46_8" Number_of_Logs="18">
+	<Log Time="23/04/2020 22:45:37" LogString="Goal Complete: GoalTestEmpty" />
+	<Log Time="23/04/2020 22:45:37" LogString="Test Case Passed" />
+	<Log Time="23/04/2020 22:45:38" LogString="Test Case PassedCanSaveDefaultGameObject" />
+	<Log Time="23/04/2020 22:45:52" LogString="Test Case PassedCanSightSystemSee" />
+	<Log Time="23/04/2020 22:45:57" LogString="Test Case PassedCanTriggerEvent" />
+	<Log Time="23/04/2020 22:45:59" LogString="Object Emitting: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:45:59" LogString="Object Emitting: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:45:59" LogString="Duplicated Event Detected: Originator: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:46:03" LogString="Test Case PassedTestCombineSystem" />
+	<Log Time="23/04/2020 22:46:03" LogString="Test Case PassedTestGoalLoading" />
+	<Log Time="23/04/2020 22:46:03" LogString="Test Case PassedTestGoalSaving" />
+	<Log Time="23/04/2020 22:46:05" LogString="Object Emitting: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:46:05" LogString="Duplicated Event Detected: Originator: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:46:05" LogString="Object Emitting: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:46:05" LogString="Duplicated Event Detected: Originator: Teabag(Clone)" />
+	<Log Time="23/04/2020 22:46:08" LogString="Test Case PassedTestNameStateChange" />
+	<Log Time="23/04/2020 22:46:08" LogString="Test Case PassedTestObjectLoading" />
+	<Log Time="23/04/2020 22:46:08" LogString="Test Case PassedTestRoomLoading" />
+</LogRoot>

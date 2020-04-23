@@ -106,7 +106,14 @@
     <Compile Include="Assets\PreviewAxis.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanCompleteAGoal.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanSaveDefaultGameObject.cs" />
+    <Compile Include="Assets\Resources\TestSuite\CanSightSystemSee.cs" />
     <Compile Include="Assets\Resources\TestSuite\CanTriggerEvent.cs" />
+    <Compile Include="Assets\Resources\TestSuite\TestCombineSystem.cs" />
+    <Compile Include="Assets\Resources\TestSuite\TestGoalLoading.cs" />
+    <Compile Include="Assets\Resources\TestSuite\TestGoalSaving.cs" />
+    <Compile Include="Assets\Resources\TestSuite\TestNameStateChange.cs" />
+    <Compile Include="Assets\Resources\TestSuite\TestObjectLoading.cs" />
+    <Compile Include="Assets\Resources\TestSuite\TestRoomLoading.cs" />
     <Compile Include="Assets\RoomLoadSelectionButtonControlScript.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\attatchBuildObject.cs" />
     <Compile Include="Assets\Scripts\BuildSystem\BuildController.cs" />
@@ -158,7 +165,6 @@
     <Compile Include="Assets\Scripts\Monitoring\InteractionSystem\Interactable.cs" />
     <Compile Include="Assets\Scripts\Monitoring\InteractionSystem\InteractionManager.cs" />
     <Compile Include="Assets\Scripts\Monitoring\SeenBehaviour\SeenBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Test_Suite\CheckRawLogSyntax.cs" />
     <Compile Include="Assets\Scripts\Test_Suite\TestCase.cs" />
     <Compile Include="Assets\Scripts\Test_Suite\TestSuite.cs" />
     <Compile Include="Assets\Scripts\UI Scripts\ArmUI.cs" />

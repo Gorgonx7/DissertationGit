@@ -27,6 +27,7 @@ public class CanSaveDefaultGameObject : TestCase
             {
                 failed = true;
             }
+            DestroyImmediate(TestObject);
         }
         catch (Exception e)
         {
@@ -34,6 +35,7 @@ public class CanSaveDefaultGameObject : TestCase
             errorLog = e.StackTrace;
         }
         base.Test();
+        
     }
     // Update is called once per frame
     void Update()

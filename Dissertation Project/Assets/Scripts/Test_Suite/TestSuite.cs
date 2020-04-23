@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿#if (UNITY_EDITOR)
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Assets.LogUtil;
 using UnityEditor;
 
-#if (UNITY_EDITOR)
+
 public class TestSuite : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -17,11 +18,7 @@ public class TestSuite : MonoBehaviour
         Component test = gameObject.AddComponent(scripts[0].GetClass());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+   
     public void complete(TestCase test)
     {
         if (test.failed)
@@ -35,7 +32,7 @@ public class TestSuite : MonoBehaviour
         }
         if (!allTestsCompleted)
         {
-            Destroy(test);
+            
             currentRunningTest++;
             if (currentRunningTest >= scripts.Length)
             {

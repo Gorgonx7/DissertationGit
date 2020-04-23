@@ -72,6 +72,7 @@ namespace ACE.Goals
             writer.WriteEndElement();
             writer.Flush();
             writer.Close();
+            stream.Close();
 
         }
     }

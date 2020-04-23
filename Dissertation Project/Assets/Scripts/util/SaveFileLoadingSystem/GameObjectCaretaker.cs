@@ -24,7 +24,16 @@ namespace ACE.FileSystem
         /// <returns></returns>
         public GameObject CreateObject(GameObjectSchema momento, string directoryName)
         {
-            GameObject output = ObjectDirectoryManager.LoadObject(RecursiveLoadString, directoryName);
+            
+                GameObject output;
+            try { 
+                output = ObjectDirectoryManager.LoadObject(RecursiveLoadString, directoryName);
+            }
+            catch
+            {
+                 output = new GameObject();
+                return output;
+            }
             LocationFileSaved = SAVEFILELOCATION + directoryName;
             GameObject child = output.transform.GetChild(0).gameObject;
             child.transform.parent = null;

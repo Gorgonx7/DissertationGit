@@ -37,12 +37,5 @@ public class LoadObject : MonoBehaviour
         loadedObject.tag = "EditableObject";
         loadedObject.AddComponent<RotationPreview>().constraintBox = RotationTextbox;
     }
-    private void Start()
-    {
-        
-    }
-    private void Update()
-    {
-        
-    }
+   
 }

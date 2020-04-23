@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GoalSet>
+  <Goal goalName="testgoal" goalObjectName="testName">
+    <GoalItem name="a" />
+    <GoalItem name="weee" />
+    <GoalItem name="test" />
+  </Goal>
+</GoalSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_23_11_4_40" Number_of_Logs="26">
+	<Log Time="23/04/2020 11:02:38" LogString="Object Emitting: Spout" />
+	<Log Time="23/04/2020 11:02:51" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:02:51" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="23/04/2020 11:02:57" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:02:57" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="23/04/2020 11:02:57" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:02:57" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:02" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:02" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:10" LogString="interacted With: teabagHandle" />
+	<Log Time="23/04/2020 11:03:12" LogString="stopped interacted With: teabagHandle" />
+	<Log Time="23/04/2020 11:03:12" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 11:03:12" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 11:03:12" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 11:03:12" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 11:03:12" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 11:03:12" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 11:03:14" LogString="Opened door" />
+	<Log Time="23/04/2020 11:03:17" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:17" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:24" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:24" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:32" LogString="State changed: EmptyCup in to Water" />
+	<Log Time="23/04/2020 11:03:32" LogString="Goal Complete: GoalManager" />
+	<Log Time="23/04/2020 11:03:35" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="23/04/2020 11:03:35" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+</LogRoot>

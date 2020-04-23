@@ -13,8 +13,8 @@ namespace ACE.Event_System
         // All objects have an initial state, which is set to their name
         public string initialState;
         public List<string> currentStates = new List<string>();
-        public Dictionary<string, string> stateChanges = new Dictionary<string, string>(); 
-
+        public Dictionary<string, string> stateChanges = new Dictionary<string, string>();
+        public bool changeNameOnStateChange = false;
         void Start()
         {
             initialState = gameObject.name;
@@ -34,6 +34,7 @@ namespace ACE.Event_System
         /// <param name="state"></param>
         public void add(string state)
         {
+            
             try
             {
                 if (stateChanges[state] != null)
@@ -41,6 +42,7 @@ namespace ACE.Event_System
                     currentStates.Remove(state);
                     currentStates.Add(stateChanges[state]);
                     gameObject.name = stateChanges[state];
+                    
                 }
             }
             catch
@@ -48,6 +50,10 @@ namespace ACE.Event_System
                 if (!currentStates.Contains(state))
                 {
                     currentStates.Add(state);
+                }
+                if (changeNameOnStateChange)
+                {
+                    gameObject.name = state;
                 }
             }
         }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_23_20_31_49" Number_of_Logs="3">
+	<Log Time="23/04/2020 20:31:39" LogString="Object Emitting: Teabag(Clone)" />
+	<Log Time="23/04/2020 20:31:39" LogString="Object Emitting: Teabag(Clone)" />
+	<Log Time="23/04/2020 20:31:39" LogString="Duplicated Event Detected: Originator: Teabag(Clone)" />
+</LogRoot>

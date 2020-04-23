@@ -59,7 +59,7 @@ namespace ACE.Event_System
         /// <param name="iteractBox"></param>
         public void ConfigureAction(string actionName, GameObject targetObject, Vector3 transformTrigger, Grabable grabTrigger, bool inverted, bool xMat, bool yMat, bool zMat, string requiredState, ACE_Interaction iteractBox)
         {
-            this.InteractionBoxName = iteractBox.name;
+            this.InteractionBoxName = iteractBox.gameObject.name;
             this.actionName = actionName;
             target = targetObject;
             this.transformTrigger = transformTrigger;
@@ -87,13 +87,18 @@ namespace ACE.Event_System
         {
             if(UserDefined)
             {
-                trigger_Type = ACE_Action_Trigger_Type.Grab_Rotation;
+                trigger_Type = ACE_Action_Trigger_Type.Rotation;
             }
             if (enabled)
             {
                 if (InteractionBoxName != null && InteractionBoxName != "")
                 {
-                    interactionObject = GameObject.Find("InteractionBoxName").GetComponent<ACE_Interaction>();
+                    GameObject hol = GameObject.Find(InteractionBoxName);
+                    if(hol == null)
+                    {
+                        hol = gameObject.transform.Find(InteractionBoxName).gameObject;
+                    }
+                    interactionObject = hol.GetComponent<ACE_Interaction>();
                 }
                 if (invert)
                 {
@@ -129,7 +134,7 @@ namespace ACE.Event_System
                 }
             }
         }
-
+     
         /// <summary>
         /// Polls the trigger once per frame, then transmits an event if event is triggered
         /// </summary>
@@ -198,15 +203,15 @@ namespace ACE.Event_System
         private bool isTriggeredRotation()
         {
 
-            if (x_Matters && target.transform.rotation.eulerAngles.x > transformTrigger.x)
+            if (x_Matters && target.transform.rotation.eulerAngles.x - 180 > transformTrigger.x )
             {
                 return true;
             }
-            if (y_Matters && target.transform.rotation.eulerAngles.y > transformTrigger.y)
+            if (y_Matters && target.transform.rotation.eulerAngles.y - 180 > transformTrigger.y)
             {
                 return true;
             }
-            if (z_Matters && target.transform.rotation.eulerAngles.z > transformTrigger.z)
+            if (z_Matters && target.transform.rotation.eulerAngles.z - 180  > transformTrigger.z)
             {
                 return true;
             }

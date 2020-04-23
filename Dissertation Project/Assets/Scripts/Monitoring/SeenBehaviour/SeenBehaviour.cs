@@ -16,7 +16,7 @@ public class SeenBehaviour : MonoBehaviour
 
     float lastSeentime = 0.0f;
     float totalTimeSpentInFrame = 0.0f;
-
+    float totalTimeSpentInFocus = 0.0f;
     float totalTimeSpentInPeriferal = 0.0f;
     bool isSeen = false;
     private void Start()
@@ -63,7 +63,7 @@ public class SeenBehaviour : MonoBehaviour
                 else
                 {
                     glowHolder.GetComponent<MeshRenderer>().material.color = SeenColour;
-                    totalTimeSpentInFrame += Time.deltaTime;
+                    totalTimeSpentInFocus += Time.deltaTime;
 
                 }
                 isSeen = true;
@@ -106,7 +106,7 @@ public class SeenBehaviour : MonoBehaviour
     }
     public float GetTimeInFocus()
     {
-        return totalTimeSpentInPeriferal;
+        return totalTimeSpentInFocus;
     }
     public float GetTimeInFrame()
     {

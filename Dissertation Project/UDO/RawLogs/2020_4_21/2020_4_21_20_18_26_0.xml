@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_21_20_18_26" Number_of_Logs="4">
+	<Log Time="21/04/2020 20:17:54" LogString="Object Emitting: Spout" />
+	<Log Time="21/04/2020 20:17:56" LogString="Object Emitting: Spout" />
+	<Log Time="21/04/2020 20:18:01" LogString="interacted With: MugHandle" />
+	<Log Time="21/04/2020 20:18:01" LogString="stopped interacted With: MugHandle" />
+</LogRoot>

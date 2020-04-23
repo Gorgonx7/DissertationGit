@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_23_17_52_30" Number_of_Logs="11">
+	<Log Time="23/04/2020 17:51:48" LogString="Goal Complete: GoalTestEmpty" />
+	<Log Time="23/04/2020 17:52:00" LogString="Test Case Failed  Error Log: " />
+	<Log Time="23/04/2020 17:52:25" LogString="Test Case Failed CanSaveDefaultGameObject Error Log:   at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in &lt;567df3e0919241ba98db88bec4c6696f&gt;:0 &#xD;&#xA;  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode) [0x00000] in &lt;567df3e0919241ba98db88bec4c6696f&gt;:0 &#xD;&#xA;  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode)&#xD;&#xA;  at ACE.FileSystem.ObjectDirectoryManager.LoadObject (System.String directory, System.String directoryName) [0x00101] in W:\DissertationGit\Dissertation Project\Assets\Scripts\util\SaveFileLoadingSystem\ObjectDirectoryManager.cs:40 &#xD;&#xA;  at ACE.FileSystem.GameObjectCaretaker.CreateObject (ACE.FileSystem.GameObjectSchema momento, System.String directoryName) [0x00001] in W:\DissertationGit\Dissertation Project\Assets\Scripts\util\SaveFileLoadingSystem\GameObjectCaretaker.cs:27 &#xD;&#xA;  at ACE.FileSystem.GameObjectCaretaker.LoadObject (System.String ObjectName) [0x000da] in W:\DissertationGit\Dissertation Project\Assets\Scripts\util\SaveFileLoadingSystem\GameObjectCaretaker.cs:112 &#xD;&#xA;  at CanSaveDefaultGameObject.Test () [0x00043] in W:\DissertationGit\Dissertation Project\Assets\Resources\TestSuite\CanSaveDefaultGameObject.cs:26 " />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case Failed CanSightSystemSee Error Log: " />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedCanTriggerEvent" />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedTestCombineSystem" />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedTestGoalLoading" />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedTestGoalSaving" />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedTestNameStateChange" />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedTestObjectLoading" />
+	<Log Time="23/04/2020 17:52:30" LogString="Test Case PassedTestRoomLoading" />
+</LogRoot>

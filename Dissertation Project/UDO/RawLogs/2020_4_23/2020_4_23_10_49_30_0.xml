@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_23_10_49_30" Number_of_Logs="51">
+	<Log Time="23/04/2020 10:48:43" LogString="Object Emitting: Spout" />
+	<Log Time="23/04/2020 10:48:45" LogString="Object Emitting: Spout" />
+	<Log Time="23/04/2020 10:48:45" LogString="Duplicated Event Detected: Originator: Spout" />
+	<Log Time="23/04/2020 10:48:51" LogString="interacted With: MugHandle" />
+	<Log Time="23/04/2020 10:48:52" LogString="stopped interacted With: MugHandle" />
+	<Log Time="23/04/2020 10:48:57" LogString="interacted With: teabagHandle" />
+	<Log Time="23/04/2020 10:48:58" LogString="stopped interacted With: teabagHandle" />
+	<Log Time="23/04/2020 10:48:59" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:48:59" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Object Emitting: teabag" />
+	<Log Time="23/04/2020 10:49:00" LogString="Duplicated Event Detected: Originator: teabag" />
+</LogRoot>

@@ -16,6 +16,8 @@ public abstract class TestCase : MonoBehaviour
     public virtual void Test()
     {
         gameObject.GetComponent<TestSuite>().complete(this);
+        Debug.Log(CaseName + " Failed? " + failed);
+        DestroyImmediate(this);
     }
 
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRoot Creation_Date_and_time="2020_4_20_17_2_55" Number_of_Logs="29">
+	<Log Time="20/04/2020 17:01:00" LogString="interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:11" LogString="interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:11" LogString="stopped interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:12" LogString="interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:12" LogString="stopped interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:13" LogString="interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:14" LogString="stopped interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:01:23" LogString="Object Emitting: Spout" />
+	<Log Time="20/04/2020 17:01:24" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="20/04/2020 17:01:24" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="20/04/2020 17:01:29" LogString="interacted With: teabagHandle" />
+	<Log Time="20/04/2020 17:01:31" LogString="stopped interacted With: teabagHandle" />
+	<Log Time="20/04/2020 17:01:31" LogString="Object Emitting: teabag" />
+	<Log Time="20/04/2020 17:01:31" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="20/04/2020 17:01:32" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="20/04/2020 17:01:32" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="20/04/2020 17:02:08" LogString="Object Emitting: EmptyKettle" />
+	<Log Time="20/04/2020 17:02:08" LogString="Duplicated Event Detected: Originator: EmptyKettle" />
+	<Log Time="20/04/2020 17:02:14" LogString="State changed: EmptyCup in to Water" />
+	<Log Time="20/04/2020 17:02:14" LogString="Goal Complete: GoalManager" />
+	<Log Time="20/04/2020 17:02:18" LogString="Opened door" />
+	<Log Time="20/04/2020 17:02:20" LogString="interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:02:20" LogString="interacted With: teabagHandle" />
+	<Log Time="20/04/2020 17:02:20" LogString="stopped interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:02:20" LogString="stopped interacted With: teabagHandle" />
+	<Log Time="20/04/2020 17:02:20" LogString="Object Emitting: teabag" />
+	<Log Time="20/04/2020 17:02:20" LogString="Duplicated Event Detected: Originator: teabag" />
+	<Log Time="20/04/2020 17:02:21" LogString="interacted With: MugHandle" />
+	<Log Time="20/04/2020 17:02:27" LogString="stopped interacted With: MugHandle" />
+</LogRoot>
