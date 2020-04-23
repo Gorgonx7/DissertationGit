@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace ACE.Goals
 {
-
+    /// <summary>
+    /// Goal class, just responsible for checking if this specific goal is complete
+    /// </summary>
     public class Goal : MonoBehaviour
     {
         // the name of this goal
@@ -14,13 +16,11 @@ namespace ACE.Goals
         public bool completed = false;
         //Items associated with this goal
         public List<string> importantItems = new List<string>();
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
+       
         
-        // Update is called once per frame
+        /// <summary>
+        /// Checks once per frame if the goal is complete
+        /// </summary>
         void Update()
         {
             if(GameObject.Find(GoalObjectName) != null)

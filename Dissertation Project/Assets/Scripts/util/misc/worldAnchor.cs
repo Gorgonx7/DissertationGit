@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace Assets.Scripts
 {
+    /// <summary>
+    /// Registers the original position of a gameobject
+    /// </summary>
     class worldAnchor : MonoBehaviour
     {
         List<GameObject> worldAnchors = new List<GameObject>();

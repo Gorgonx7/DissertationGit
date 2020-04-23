@@ -5,10 +5,13 @@ using Assets.LogUtil;
 
 namespace ACE.Event_System
 {
+    /// <summary>
+    /// Used as the trigger for for the final event, in the case of the sample an explicit event has been triggered 
+    /// </summary>
     public class ACE_Event_Trigger : MonoBehaviour
     {
         private ACE_Event_Controller Controller;
-        // Start is called before the first frame update
+  
         public GameObject triggerModel;
         public string stateNameChange;
         public string ShaderProperty;
@@ -22,7 +25,9 @@ namespace ACE.Event_System
             Controller = GameObject.FindGameObjectWithTag("ACE_Controller").GetComponent<ACE_Event_Controller>();
         }
 
-        // Update is called once per frame
+        /// <summary>
+        /// Requires some changes to ace action to change the state of an event based off of an event action, should not actually be that hard but ran out of time for the implementation
+        /// </summary>
         void Update()
         {
             ACE_Event triggerEvent = Controller.Poll(gameObject);
@@ -31,8 +36,7 @@ namespace ACE.Event_System
                 if (triggerEvent.getEventType() == EventType.Combine)
                 {
                     triggerEvent.m_originalObject.GetComponent<ACE_Combine>().Trigger(gameObject);
-                }
-                else
+                } else
                 {
                     Trigger();
                 }

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Used to attatch the build object to the mouse after clicking on a button within the room builder
+/// </summary>
 public class attatchBuildObject : MonoBehaviour
 {
     

@@ -9,6 +9,9 @@ using Valve.VR;
 
 namespace Util.Interactables
 {
+    /// <summary>
+    /// Base class for all interactions, handles the core steam vr action logic
+    /// </summary>
     public abstract class InteractableCollision : IVREvent
     {
         protected bool isHandNear = false;

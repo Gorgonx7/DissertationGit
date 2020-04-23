@@ -9,7 +9,9 @@ using UnityEngine;
 
 namespace ACE.Goals
 {
-    //Goal files are xml files that define the name of objects and their state required for goal completion
+    /// <summary>
+    /// Loads the goals in from the goal file created in the room creator
+    /// </summary>
     public static class GoalLoader
     {
         const string GOALFILELOCATION = "./UDO/Goals/";

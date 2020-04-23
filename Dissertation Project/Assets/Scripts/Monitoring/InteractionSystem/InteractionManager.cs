@@ -8,6 +8,9 @@ using UnityEngine;
 
 namespace ACE.Interactions
 {
+    /// <summary>
+    /// used by the Evaluation systems to understand how the user is interacting within the scene
+    /// </summary>
     static class InteractionManager
     {
         static List<Goal> orderedListOfGoals = new List<Goal>();

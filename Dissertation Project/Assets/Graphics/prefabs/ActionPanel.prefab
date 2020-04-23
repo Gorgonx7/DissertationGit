@@ -2263,7 +2263,7 @@ PrefabInstance:
     - target: {fileID: 6662024301292677178, guid: 134ad7b11c3121a4d87cdebdc4478c25,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6996943627062784828, guid: 134ad7b11c3121a4d87cdebdc4478c25,
         type: 3}
@@ -2417,18 +2417,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7598917887698148104, guid: 134ad7b11c3121a4d87cdebdc4478c25,
         type: 3}
-      propertyPath: m_ContentType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7598917887698148104, guid: 134ad7b11c3121a4d87cdebdc4478c25,
-        type: 3}
       propertyPath: m_KeyboardType
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7598917887698148104, guid: 134ad7b11c3121a4d87cdebdc4478c25,
         type: 3}
       propertyPath: m_CharacterValidation
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 134ad7b11c3121a4d87cdebdc4478c25, type: 3}
@@ -2459,7 +2454,7 @@ PrefabInstance:
     - target: {fileID: 1006747107191540967, guid: 625d0f654e3102d458da17991f7fac9a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1006747107191540964, guid: 625d0f654e3102d458da17991f7fac9a,
         type: 3}

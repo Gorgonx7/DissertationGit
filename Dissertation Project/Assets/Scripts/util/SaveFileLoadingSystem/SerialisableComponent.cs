@@ -71,12 +71,30 @@ namespace ACE.FileSystem
                     string typeString = i.Value.m_type;
                     
                     if ((Type.GetType("System." + typeString).GetMethod("Parse", new[] { typeof(string) }) != null)){
-                        componentType.GetProperty(i.Key).SetValue(comp, Type.GetType("System." + typeString).GetMethod("Parse", new[] { typeof(string) }).Invoke(null, new object[] { i.Value.m_Val }));
+                        if (componentType.GetProperty(i.Key) != null) {
+                            componentType.GetProperty(i.Key).SetValue(comp, Type.GetType("System." + typeString).GetMethod("Parse", new[] { typeof(string) }).Invoke(null, new object[] { i.Value.m_Val }));
+                        }
+                        else
+                        {
+                            componentType.GetField(i.Key).SetValue(comp, Type.GetType("System." + typeString).GetMethod("Parse", new[] { typeof(string) }).Invoke(null, new object[] { i.Value.m_Val }));
+
+                        }
                     }
                 }
                 else
                 {
-                    componentType.GetProperty(i.Key).SetValue(comp, value);
+                    PropertyInfo info = componentType.GetProperty(i.Key);
+                    if (info != null)
+                    {
+                        info.SetValue(comp, value);
+                    }
+                    else
+                    {
+                        if (componentType.GetField(i.Key) != null)
+                        {
+                            componentType.GetField(i.Key).SetValue(comp, value);
+                        }
+                    }
                 }
                 
                 
@@ -119,7 +137,20 @@ namespace ACE.FileSystem
                             {
                                 while (reader.MoveToNextAttribute())
                                 {
-                                    Output.componentVariable.Add(reader.Name, new ACE_PropertyField(componentType.GetProperty(reader.Name).PropertyType.Name, reader.Value));
+                                PropertyInfo propinfo = componentType.GetProperty(reader.Name);
+                                string fieldName = "";
+                                if (propinfo == null) {
+                                    FieldInfo FieldInfo = componentType.GetField(reader.Name);
+                                    if (FieldInfo != null)
+                                    {
+                                        fieldName = FieldInfo.FieldType.Name;
+                                    }
+                                }
+                                else {
+                                    fieldName = propinfo.PropertyType.Name;
+                                }
+                                     
+                                    Output.componentVariable.Add(reader.Name, new ACE_PropertyField(fieldName, reader.Value));
                                 }
                             }
                             break;
@@ -158,6 +189,14 @@ namespace ACE.FileSystem
                         }
                     }
                 }
+            FieldInfo[] Fieldinfo = componentType.GetFields(BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Public);
+            foreach(FieldInfo i in Fieldinfo)
+            {
+                if(i.GetValue(m_Component) != null)
+                {
+                    writer.WriteAttributeString(i.Name, i.GetValue(m_Component).ToString());
+                }
+            }
                 writer.WriteEndElement();
                 writer.WriteEndElement();
             }

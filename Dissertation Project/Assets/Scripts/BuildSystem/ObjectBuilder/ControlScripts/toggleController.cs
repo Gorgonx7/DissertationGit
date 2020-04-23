@@ -2,20 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Controls the toggles for scaling and translating the grab boxes
+/// </summary>
 public class toggleController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public List<ClickandDragTranslate> BehaviourToDeactivate = new List<ClickandDragTranslate>();
     public List<ClickandDrag> BehaviourToActivate = new List<ClickandDrag>();
     public void StateChange()

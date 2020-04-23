@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Legacy code for combining multiple meshes into one
+/// </summary>
 public class MeshCombiner : MonoBehaviour
 {
     // Start is called before the first frame update

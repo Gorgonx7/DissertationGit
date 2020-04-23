@@ -19,12 +19,7 @@ namespace ACE.EvaulationSystem
         public AttentionType attentionType;
         
         public int errorThreshold = 5;
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
+       
         // Update is called once per frame
         public override void Update()
         {
@@ -40,7 +35,7 @@ namespace ACE.EvaulationSystem
             base.Update();
         }
         /// <summary>
-        /// Calculates
+        /// Calculates the sight component of the evaluation
         /// </summary>
         /// <returns></returns>
         private float CalculateSightComponent(Goal pGoal)

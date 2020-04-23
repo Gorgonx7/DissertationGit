@@ -3,16 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Controls the Goal UI for the user, displaying all the goals in text form
+/// </summary>
 public class GoalUI : MonoBehaviour
 {
     public GameObject GoalTextPrefab;
     public GameObject[] currentGoals = new GameObject[0];
-    // Start is called before the first frame update
-    void Start()
-    {
-           
-    }
+   
 
     // Update is called once per frame
     void Update()

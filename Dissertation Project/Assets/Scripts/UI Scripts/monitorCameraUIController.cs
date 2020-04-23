@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Responsible for cycling the camera angles in the old UI
+/// </summary>
 public class monitorCameraUIController : MonoBehaviour
 {
     public List<Texture> renderTextures;

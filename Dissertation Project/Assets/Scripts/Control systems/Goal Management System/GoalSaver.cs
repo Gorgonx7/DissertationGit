@@ -8,6 +8,9 @@ using System.Xml;
 
 namespace ACE.Goals
 {
+    /// <summary>
+    /// Responsible for saving goals, this struct acts as the momento for the goal class, not defined as its own class as it's faster to use a struct for saving, and this is not as complex as saving a full game object
+    /// </summary>
     public struct GoalSaveStruct
     {
         string m_goalName;
@@ -32,6 +35,9 @@ namespace ACE.Goals
             return m_associatedObjects;
         }
     }
+    /// <summary>
+    /// Simple struct that writes the XML for the above struct
+    /// </summary>
    public static class GoalSaver
     {
         const string GOALFILELOCATION = "./UDO/Goals/";

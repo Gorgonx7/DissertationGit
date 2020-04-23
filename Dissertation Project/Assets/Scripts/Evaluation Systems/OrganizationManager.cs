@@ -5,10 +5,13 @@ using UnityEngine;
 
 namespace ACE.EvaulationSystem
 {
+    /// <summary>
+    /// The organization manager use the grouping system to calculate the organization of the current attempt
+    /// </summary>
     public class OrganizationManager : EvaluationManager
     {
         GroupUpdate groupManager;
-        // Start is called before the first frame update
+       
         void Start()
         {
             currentImprovementPoints.Clear();

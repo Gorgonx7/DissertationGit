@@ -8,6 +8,9 @@ using Util.Interactables;
 using System;
 
 namespace ACE.Interactions {
+    /// <summary>
+    /// Responsible for updating the interact systems within the function. generates events within the interaction system whenever an interaction occours
+    /// </summary>
     public class Interactable : InteractableCollision
     {
         private HintManager hintControl;

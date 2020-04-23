@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// A simple class that attempts to understand how a user is seeing objects within the scene, registering the objects within their periferal and central vision
+/// </summary>
 public class SeenBehaviour : MonoBehaviour
 {
     public Color SeenColour = Color.green;

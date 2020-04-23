@@ -4,6 +4,9 @@ using UnityEngine;
 using Valve.VR;
 namespace Util.Interactables
 {
+    /// <summary>
+    /// Script attatched to hand to control the grabbing of objects
+    /// </summary>
     public class Grabber : InteractableCollision
     {
         Grabable grabbedObject = null;
@@ -11,11 +14,8 @@ namespace Util.Interactables
         
       
 
-        // Update is called once per frame
-        void Update()
-        {
+        
 
-        }
         protected override void OnTriggerEnter(Collider other)
         {
 

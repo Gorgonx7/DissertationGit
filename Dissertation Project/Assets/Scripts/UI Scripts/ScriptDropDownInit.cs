@@ -6,6 +6,9 @@ using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.UI;
+/// <summary>
+/// Legacy UI script for the object builder
+/// </summary>
 public class ScriptDropDownInit : MonoBehaviour
 {
     public string NameSpaceName = "ACE.FileSystem";
@@ -39,9 +42,5 @@ public class ScriptDropDownInit : MonoBehaviour
         ComponentHolder.AddComponent(classAdded as Component);
         compInSystem = classAdded as Component;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

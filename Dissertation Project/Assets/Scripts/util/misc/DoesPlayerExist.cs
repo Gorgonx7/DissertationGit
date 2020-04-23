@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Checks if the player exisits and then creates it if not
+/// </summary>
 public class DoesPlayerExist : MonoBehaviour
 {
     public GameObject playerPrefab;

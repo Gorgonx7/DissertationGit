@@ -4,7 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HowToImproveController : MonoBehaviour
 {
-
+    /// <summary>
+    /// controls the how to improve text boxes
+    /// </summary>
+    /// <param name="improvementStrings"></param>
     public void UpdateWaysToImprove(string[] improvementStrings)
     {
         int numberOfImprovements = 0;

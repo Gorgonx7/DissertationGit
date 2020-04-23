@@ -1,5 +1,6 @@
 ﻿Shader "Custom/FillShader"
 {
+	/// Used as a shader for filling the cup of tea
     Properties
     {
         _Color ("Color", Color) = (1,1,1,1)

@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// log listener listens for new logs and displays them in the log UI
+/// </summary>
 public class LogListener : MonoBehaviour
 {
     public GameObject logPrefab;
@@ -15,12 +17,7 @@ public class LogListener : MonoBehaviour
         LogManager.LogListeners.Add(this);   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   
     public void CreateNewLog(string logString)
     {
         GameObject log = Instantiate(logPrefab);
@@ -30,9 +27,10 @@ public class LogListener : MonoBehaviour
         float totalHeight = 0.0f;
         foreach(GameObject i in logList)
         {
-            totalHeight += i.GetComponent<Text>().preferredHeight; 
+            totalHeight += -25; 
         }
-        log.transform.localPosition += new Vector3(xOffset, totalHeight, 0); ;
+        log.transform.localPosition += new Vector3(0, totalHeight, 0); ;
+        log.transform.localPosition = new Vector3(xOffset, log.transform.localPosition.y, 0);
         logList.Add(log);
 
     }

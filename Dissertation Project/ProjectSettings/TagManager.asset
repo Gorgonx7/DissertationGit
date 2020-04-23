@@ -19,6 +19,7 @@ TagManager:
   - FxTemporaire
   - projectile
   - GroupSystem
+  - Selectable
   layers:
   - Default
   - TransparentFX

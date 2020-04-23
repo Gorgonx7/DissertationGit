@@ -1,5 +1,6 @@
 ﻿Shader "Unlit/FlashShader"
 {
+    // used as a shader to flash the objects within a room
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}

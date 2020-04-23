@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Responsible for loading difference scenes
+/// </summary>
 namespace Assets
 {
     class SceneSwitcher : MonoBehaviour

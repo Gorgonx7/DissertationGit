@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This is used to control the gimbol for the object build mode, this is resonsible for scaling the grab and interaction boxes
+/// </summary>
 public class ClickandDrag : MonoBehaviour
 {
     public GameObject ObjectToAdjust;
@@ -26,7 +29,7 @@ public class ClickandDrag : MonoBehaviour
             negative = true;
         } else if(gameObject.name == "Left")
         {
-            x = true;
+            x= true;
             negative = true;
         } else if(gameObject.name == "Right")
         {
@@ -34,11 +37,11 @@ public class ClickandDrag : MonoBehaviour
 
         } else if(gameObject.name == "Front")
         {
-            x = true;
+            z = true;
             negative = true;
         } else if(gameObject.name == "Back")
         {
-            x = true;
+            z = true;
         }
     }
 
@@ -71,14 +74,7 @@ public class ClickandDrag : MonoBehaviour
             {
                 sign = -1.0f;
             }
-
-            // Set this object's position to where the mouse is being held down by the left click.
-           /* if (y)
-            {
-                transform.position =  new Vector3(transform.position.x, Camera.main.ScreenToWorldPoint(mousePosition).y, transform.position.z);
-                opposite.transform.position = new Vector3(opposite.transform.position.x, opposite.transform.position.y - (Camera.main.ScreenToWorldPoint(mousePosition).y - Camera.main.ScreenToWorldPoint(previousMousePosition).y), opposite.transform.position.z);
-            }*/
-                // Change the scale of mainObject by comparing previous frame mousePosition with this frame's position, modified by sizingFactor.
+         
                 Vector3 scale = ObjectToAdjust.transform.localScale;
                
                 if (x) {

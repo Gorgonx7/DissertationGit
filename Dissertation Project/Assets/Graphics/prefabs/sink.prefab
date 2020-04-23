@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: 
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   handType: 0
   objectToActivate: {fileID: 0}
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: /actions/Default/in/Grab
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   handType: 0
   objectToActivate: {fileID: 0}

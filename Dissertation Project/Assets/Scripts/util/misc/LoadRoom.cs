@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Siccity.GLTFUtility;
 using SFB;
-
+/// <summary>
+/// Loads a room from a GLB file using SFB
+/// </summary>
 public class LoadRoom : MonoBehaviour
 {
     public GameObject currentRoom;

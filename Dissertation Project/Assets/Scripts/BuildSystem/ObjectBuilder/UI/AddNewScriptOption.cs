@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Legacy, was used to add a script from the dropdown prefab to add a direct script from the ACE Event system
+/// </summary>
 public class AddNewScriptOption : MonoBehaviour
 {
     public GameObject DropdownPrefab;

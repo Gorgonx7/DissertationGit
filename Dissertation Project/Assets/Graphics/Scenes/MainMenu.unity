@@ -120,6 +120,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &45320124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1243428394049429780, guid: fef41c00d9841d241b2d5f6f447ba540,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243428393878972254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &876668959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1243428393040477432, guid: fef41c00d9841d241b2d5f6f447ba540,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243428393878972254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &876668961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876668959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f8e8571decf8f4fa0722f6e6696ea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonPrefab: {fileID: 8786393262781341474, guid: a64e8230e70d33840b57db3b350e7f1e,
+    type: 3}
+  rooms: []
+  parentObject: {fileID: 45320124}
+  xOffset: -221
+  yOffset: -180
+  initialY: -40
+  currentFilter: 0
 --- !u!1 &1355722946
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,7 +242,6 @@ GameObject:
   - component: {fileID: 1815319409}
   - component: {fileID: 1815319408}
   - component: {fileID: 1815319407}
-  - component: {fileID: 1815319410}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -283,18 +314,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1815319410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815319406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9feed2d867419d4ba411ade3db173b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1903095738
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,5 +552,46 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 876668961}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReRenderUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 876668961}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SwitchFilter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243428392985071707, guid: fef41c00d9841d241b2d5f6f447ba540,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1243428393040477428, guid: fef41c00d9841d241b2d5f6f447ba540, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fef41c00d9841d241b2d5f6f447ba540, type: 3}

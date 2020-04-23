@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Used in the object build to translate the grab and interaction boxes
+/// </summary>
 public class ClickandDragTranslate : MonoBehaviour
 {
     bool MouseDown = false;
@@ -34,20 +36,16 @@ public class ClickandDragTranslate : MonoBehaviour
         }
         else if (gameObject.name == "Front")
         {
-            x = true;
+            z = true;
             
         }
         else if (gameObject.name == "Back")
         {
-            x = true;
+            z = true;
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     private void OnMouseDown()
     {
         if (!this.enabled)

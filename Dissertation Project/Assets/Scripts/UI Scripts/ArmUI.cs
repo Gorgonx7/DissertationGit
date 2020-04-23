@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
-
+/// <summary>
+/// Responsible for controlling the arm UI that resets the scene
+/// </summary>
 public class ArmUI : MonoBehaviour
 {
     public Vector3 PositionRelativeToZero = new Vector3(0, 0, 0);

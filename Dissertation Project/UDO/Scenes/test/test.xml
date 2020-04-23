@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Scene Name="test">
-  <teapot Position="(-1.2, 3.3, 9.8)" />
+<Scene Name="test" GoalFile="test">
+  <Clock Position="(2.7, 0.0, 11.3)" />
 </Scene>

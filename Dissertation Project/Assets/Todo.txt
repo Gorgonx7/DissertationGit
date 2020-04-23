@@ -1,13 +1,2 @@
-﻿To Do List
-
-Code to fix	- after the 16th																								
-results pannel spelling mistakes																							
-room scale bar																												
-conbine UDO events																											
-save system architecture diagram																															
-																															
-																											
-automated tests
-rotation when UDO events triggered, not triggered
-water box
-Automated Testing
+﻿automated tests
+save system architecture diagram

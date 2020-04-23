@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace ACE.EvaulationSystem
 {
-    public class FinalScoreManager : MonoBehaviour
+    /// <summary>
+    /// produces an average for the final evaluation system
+    /// </summary>
+    public class FinalScoreManager : EvaluationManager
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        public AttentionManager attention;
+        public GoalCompletionManager Goal;
+        public MultitaskingManager multitasking;
+        public OrganizationManager organization;
 
-        }
 
         // Update is called once per frame
-        void Update()
+        public override void Update()
         {
-
+            currentRating = (attention.currentRating + Goal.currentRating + multitasking.currentRating + organization.currentRating) / 4;
+            base.Update();
         }
     }
 }

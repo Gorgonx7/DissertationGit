@@ -7,6 +7,9 @@ using Valve.VR;
 using UnityEngine;
 namespace Util.Interactables
 {
+    /// <summary>
+    /// Very bottom of the VR event class, used to hold abstract concepts for the above classes
+    /// </summary>
     public abstract class IVREvent : MonoBehaviour
     {
         public SteamVR_Action_Boolean control;

@@ -354,8 +354,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7877124446761254547}
-  - component: {fileID: 2894581172848186756}
   - component: {fileID: 6560182439953108099}
+  - component: {fileID: 1763599247246284348}
   m_Layer: 0
   m_Name: Clock
   m_TagString: Untagged
@@ -382,23 +382,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &2894581172848186756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6560182439953108096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbbda8c5bd0d47649b6bae7787dcebe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hours: {fileID: 6379464839706603134}
-  minutes: {fileID: 2669917586793242216}
-  seconds: {fileID: 5645685079010719160}
-  tickingSound: {fileID: 6560182439953108099}
-  analog: 0
 --- !u!82 &6560182439953108099
 AudioSource:
   m_ObjectHideFlags: 0
@@ -495,6 +478,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1763599247246284348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6560182439953108096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8232c2c243ef18142b9fb3216eb5d806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hours: {fileID: 6379464839706603134}
+  minutes: {fileID: 2669917586793242216}
+  seconds: {fileID: 5645685079010719160}
+  tickingSound: {fileID: 6560182439953108099}
+  analog: 0
 --- !u!1 &7013901373188013724
 GameObject:
   m_ObjectHideFlags: 0

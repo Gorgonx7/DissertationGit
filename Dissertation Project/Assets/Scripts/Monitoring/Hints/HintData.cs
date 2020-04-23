@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace ACE.TimeManagement
 {
+    //Data for each goals hint system is stored within this class
     class HintData
     {
         public List<string> PastObjects = new List<string>();

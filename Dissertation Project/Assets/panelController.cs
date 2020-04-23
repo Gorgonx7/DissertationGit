@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Controls the rotate and combine pannels switching between the two settings
+/// </summary>
 public class panelController : MonoBehaviour
 {
     public GameObject RotatePannel;

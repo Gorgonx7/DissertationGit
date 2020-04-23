@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Graphics/Scenes/PlayerCreatedScene.unity
     guid: 1a311d917cf4dfa47a20198f113eebf3
-  - enabled: 0
-    path: Assets/Graphics/Scenes/test.unity
-    guid: 2bfc0c146b9b74641b6d6b0fae882e27
   m_configObjects: {}

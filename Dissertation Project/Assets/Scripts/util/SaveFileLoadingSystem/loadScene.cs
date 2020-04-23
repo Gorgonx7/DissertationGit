@@ -1,5 +1,5 @@
 ﻿using ACE.Goals;
-using Assets.SaveFileLoadingSystem;
+
 using Assets.Scripts.util.misc;
 using System;
 using System.Collections.Generic;
@@ -11,6 +11,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 namespace ACE.FileSystem
 {
+    /// <summary>
+    /// Loads a full scene with it's object
+    /// </summary>
     public static class loadScene
     {
        

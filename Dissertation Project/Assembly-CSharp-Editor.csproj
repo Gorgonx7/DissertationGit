@@ -63,22 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Examples\ExampleResources\SharedResources\Scripts\Editor\VRTKExample_FixSetupEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\Attributes\MinMaxRangeDrawer.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\Attributes\ObsoleteInspectorDrawer.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\Attributes\SerializedPropertyExtensions.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\DataTypes\Limits2DDrawer.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\DataTypes\Vector3StateDrawer.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_AdaptiveQualityEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_EditorUtilities.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_InteractHapticsEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_NavMeshDataEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_ObjectSetup.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_PolicyListEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_RadialMenuEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_SDKManagerEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_SDKSetupEditor.cs" />
-    <Compile Include="Assets\Imports\Imported_Assets\VRTK\Source\Editor\VRTK_SupportInfoWindow.cs" />
+    <Compile Include="Assets\Imports\HSVPicker\Editor\BoxSliderEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>W:/DissertationGit/Dissertation Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -303,6 +288,9 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Ookii.Dialogs">
       <HintPath>W:/DissertationGit/Dissertation Project/Assets/Imports/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll</HintPath>

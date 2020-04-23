@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using Valve.VR;
 using UnityEngine.SceneManagement;
 using Util.Interactables;
-
+/// <summary>
+/// Reloads the current scene
+/// </summary>
 namespace Assets.UI_Scripts
 {
     public class ReloadSceneUI : InteractableCollision
@@ -22,7 +24,7 @@ namespace Assets.UI_Scripts
             {
                 return;
             }
-            SceneManager.LoadScene("scene1", LoadSceneMode.Single);
+            SceneManager.LoadScene("SampleSceneTeaMaking", LoadSceneMode.Single);
             
         }
 

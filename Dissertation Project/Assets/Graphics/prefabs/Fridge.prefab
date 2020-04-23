@@ -528,7 +528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: /actions/default/in/Grab
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   handType: 0
   door: {fileID: 826852836696917425}

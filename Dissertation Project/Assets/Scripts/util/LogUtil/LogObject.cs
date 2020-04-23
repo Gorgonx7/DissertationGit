@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
-
+/// <summary>
+/// An object that is used for storing a log in the log output
+/// </summary>
 namespace Assets.LogUtil
 {
     class LogObject

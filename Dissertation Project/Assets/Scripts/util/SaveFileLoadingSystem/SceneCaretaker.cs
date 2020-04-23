@@ -6,6 +6,9 @@ using System.Collections.Generic;
 
 namespace ACE.FileSystem
 {
+    /// <summary>
+    /// Stores everything that a player defined scene is made up of
+    /// </summary>
     public struct PlayerDefinedScene
     {
         GameObject[] m_objects;
@@ -30,6 +33,9 @@ namespace ACE.FileSystem
             return m_objects;
         }
     }
+    /// <summary>
+    /// Scene Caretaker class laods a scene based off of a scene schema
+    /// </summary>
     class SceneCaretaker
     {
         private const string SCENESAVESTRING = @"./UDO/Scenes/";

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace Assets.Scripts.util.misc
 {
+
+    /// <summary>
+    /// Stores the global variables for the system
+    /// </summary>
     public static class GlobalVariables
     {
         private static float _HeadsetHeight = 0.0f;

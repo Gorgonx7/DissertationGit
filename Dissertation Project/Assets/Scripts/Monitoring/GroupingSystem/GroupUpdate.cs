@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace ACE.Groups
 {
+    /// <summary>
+    /// The group update updates all the groups in the correct order
+    /// </summary>
     class GroupUpdate : MonoBehaviour
     {
         List<Group> m_Groups = new List<Group>();

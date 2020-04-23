@@ -9,10 +9,19 @@ using System.Xml.Serialization;
 using UnityEngine;
 namespace ACE.FileSystem
 {
+    /// <summary>
+    /// Caretaker part of the momento pattern, responsible for creating full game objects from momentos (schema)
+    /// </summary>
     class GameObjectCaretaker
     {
         private const string SAVEFILELOCATION = "./UDO/SaveFiles/";
         public string LocationFileSaved;
+        /// <summary>
+        /// Creates an object based off of a schema/momento and loads the model from a specific directory
+        /// </summary>
+        /// <param name="momento"></param>
+        /// <param name="directoryName"></param>
+        /// <returns></returns>
         public GameObject CreateObject(GameObjectSchema momento, string directoryName)
         {
             GameObject output = ObjectDirectoryManager.LoadObject(RecursiveLoadString, directoryName);
@@ -29,13 +38,14 @@ namespace ACE.FileSystem
             }
             return child;
         }
+        /// <summary>
+        /// Creates an object from a momento 
+        /// </summary>
+        /// <param name="momento"></param>
+        /// <returns></returns>
         public GameObject CreateObject(GameObjectSchema momento)
         {
             GameObject output = new GameObject();
-            
-          
-            
-           
             output.name = momento.m_ObjectName;
             foreach (SerialisableComponent<Component> i in momento.GetComponents())
             {
@@ -46,6 +56,10 @@ namespace ACE.FileSystem
             return output;
         }
         private string RecursiveSaveString = SAVEFILELOCATION;
+        /// <summary>
+        /// used to save the given gameobject entirely
+        /// </summary>
+        /// <param name="objectToSave"></param>
         public void SaveObject(GameObject objectToSave)
         {
             string previousSaveString = RecursiveSaveString;
@@ -67,9 +81,14 @@ namespace ACE.FileSystem
             RecursiveSaveString = previousSaveString;
         }
         string RecursiveLoadString = SAVEFILELOCATION;
+        /// <summary>
+        /// used to load a given gameobject from the saved objects
+        /// </summary>
+        /// <param name="ObjectName"></param>
+        /// <returns></returns>
         public GameObject LoadObject(string ObjectName)
         {
-            if(!Directory.Exists(SAVEFILELOCATION + ObjectName))
+            if(!Directory.Exists(RecursiveLoadString + ObjectName))
             {
                 return Resources.Load<GameObject>("BuildableObjects/" + ObjectName);
             }
@@ -105,6 +124,10 @@ namespace ACE.FileSystem
             return root;
 
         }
+        /// <summary>
+        /// Loads all the objects in the saved objects folder
+        /// </summary>
+        /// <returns></returns>
         public GameObject[] LoadAllObjects()
         {
             string[] directoriesToLoad = Directory.GetDirectories(SAVEFILELOCATION);

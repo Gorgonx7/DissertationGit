@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// legacy UI script when there was a virtual reality UI
+/// </summary>
 public class drawControllerLine : MonoBehaviour {
 
     public float lineLength = 2.5f;

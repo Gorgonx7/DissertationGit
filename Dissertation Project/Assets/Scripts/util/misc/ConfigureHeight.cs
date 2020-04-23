@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Util.Interactables;
 using Valve.VR;
-
+/// <summary>
+/// Configures the height of the user based off of the current headset position, used in the calibration scene
+/// </summary>
 public class ConfigureHeight : IVREvent
 {
   

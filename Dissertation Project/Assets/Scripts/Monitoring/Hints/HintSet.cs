@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace ACE.TimeManagement
 {
+    /// <summary>
+    /// A hint set is made up of each individual objects hint items
+    /// responsible for updating the current objects with the scene and storted by the last time something within the goal changed
+    /// </summary>
     class HintSet : MonoBehaviour, IComparable
     {
         public HintData m_Data;
@@ -21,7 +25,7 @@ namespace ACE.TimeManagement
         }
         private void Update()
         {
-            if (isInited)
+            if (isInited && m_Goal != null)
             {
                 
                 foreach (string i in m_Data.ExistingHintObjects)

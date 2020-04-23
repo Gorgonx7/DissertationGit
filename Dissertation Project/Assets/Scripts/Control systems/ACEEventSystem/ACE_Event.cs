@@ -8,6 +8,9 @@ using UnityEngine;
 
 namespace ACE.Event_System
 {
+    /// <summary>
+    /// Used to specifiy the types of function that can be triggered after an event
+    /// </summary>
     public class Event_Function
     {
         MethodInfo m_method;
@@ -25,21 +28,33 @@ namespace ACE.Event_System
         }
 
     }
+    /// <summary>
+    /// Differentiates between this being a Action or Combine Event
+    /// </summary>
     public enum EventType
     {
         Combine,
         Action
 
     }
+    /// <summary>
+    /// Main message carrier between most of the systems within ACE, capable of informing the classes of what is happening and how to react to this change
+    /// </summary>
    public class ACE_Event
     {
-
+        // Type of Event
         EventType m_eventType;
+        // Triggering Function
         Event_Function m_eventFunction;
+        // List of Effected Objects
         List<GameObject> m_gameObjects;
+        //Original Object
         private GameObject _OriginalObject;
+        // Event Name used for differentiating between events
         private string _EventName;
-
+        /// <summary>
+        /// Getter for original object, object that transmitted the event
+        /// </summary>
         public GameObject m_originalObject { get { return _OriginalObject; } set { _OriginalObject = value; } }
         public string OriginatorName
         {
@@ -93,15 +108,28 @@ namespace ACE.Event_System
             m_originalObject = pOriginator;
             m_eventType = eType;
         }
+        /// <summary>
+        /// Asks the original object to trigger the event cahnge
+        /// </summary>
+        /// <param name="AskingObject"></param>
         public void Trigger(GameObject AskingObject)
         {
             m_eventFunction.Trigger(AskingObject.GetComponent<Material>());
             
         }
+        /// <summary>
+        /// Checks if an event effects the given object
+        /// </summary>
+        /// <param name="askingObject"></param>
+        /// <returns></returns>
         public bool Effects(GameObject askingObject)
         {
             return m_gameObjects.Contains(askingObject);
         }
+        /// <summary>
+        /// returns if it is a combine or action event
+        /// </summary>
+        /// <returns></returns>
         public EventType getEventType()
         {
             return m_eventType;

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using ACE.Goals;
 using UnityEngine.UI;
-
+/// <summary>
+/// Controls the goal pannel for creating goals in the room designer
+/// </summary>
 public class GoalPanelController : MonoBehaviour
 {
 

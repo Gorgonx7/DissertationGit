@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Used to create the UI buttons for the room builder
+/// </summary>
 public class ButtonCreator : MonoBehaviour
 {
   

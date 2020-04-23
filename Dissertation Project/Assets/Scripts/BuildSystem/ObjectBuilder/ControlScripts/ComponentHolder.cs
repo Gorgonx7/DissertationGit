@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace Assets.BuildSystem
 {
+    /// <summary>
+    /// Legacy code for the old drop down UI
+    /// </summary>
     class ComponentHolder
     {
         private static List<Component> addedComponents = new List<Component>();

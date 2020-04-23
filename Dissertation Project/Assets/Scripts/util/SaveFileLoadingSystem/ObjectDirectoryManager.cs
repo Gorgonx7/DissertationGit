@@ -5,7 +5,9 @@ using System.IO;
 using Dummiesman;
 namespace ACE.FileSystem
 {
-    
+    /// <summary>
+    /// responsible for the loading and saving of an objects model files
+    /// </summary>
     public class ObjectDirectoryManager
     {
        public static GameObject LoadObject(string directory, string directoryName)

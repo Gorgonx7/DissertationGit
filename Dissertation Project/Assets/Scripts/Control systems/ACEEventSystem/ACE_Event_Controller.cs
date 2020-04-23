@@ -9,24 +9,19 @@ using Assets.LogUtil;
 
 namespace ACE.Event_System
 {
+    /// <summary>
+    /// ACE Event Controller controls the ace event system, passing events between relevent objects
+    /// </summary>
     public class ACE_Event_Controller : MonoBehaviour
     {
+        //These lists are used for the monitoring systems to keep track of the duplicated events
         public List<string> Final_Event_List = new List<string>();
         private List<string> EmittingEventNames = new List<string>();
         public List<ACE_Event> EmittingEvents = new List<ACE_Event>();
         private List<string> duplicatedEventLog = new List<string>();
         private List<string> duplicatedEventGameObjectNames = new List<string>();
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+       
+        
         /// <summary>
         /// Recieves events and checks if they are duplicated
         /// </summary>
@@ -55,6 +50,10 @@ namespace ACE.Event_System
                 }
             }
         }
+        /// <summary>
+        /// Destroys an event and removes it from the lists
+        /// </summary>
+        /// <param name="IncomingEndSignal"></param>
         public void End(ACE_Event IncomingEndSignal)
         {
             if (EmittingEvents.Contains(IncomingEndSignal))
@@ -67,6 +66,11 @@ namespace ACE.Event_System
                 EmittingEventNames.Remove(IncomingEndSignal.EventName);
             }
         }
+        /// <summary>
+        /// If an object asks if it is being effected, and it is, returns true
+        /// </summary>
+        /// <param name="askingObject"></param>
+        /// <returns></returns>
         public ACE_Event Poll(GameObject askingObject)
         {
             foreach (ACE_Event Aevent in EmittingEvents)
@@ -79,10 +83,15 @@ namespace ACE.Event_System
             }
             return null;
         }
+        /// <summary>
+        /// Used by monitoring to get the duplicated event names
+        /// </summary>
+        /// <returns></returns>
         public string[] GetListOfDuplicatedGameObjects()
         {
             return duplicatedEventGameObjectNames.ToArray();
         }
+
         public void Log(string logString)
         {
             duplicatedEventLog.Add(logString);

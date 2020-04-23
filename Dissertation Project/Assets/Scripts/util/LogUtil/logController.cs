@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Log controller controls the logging channels and output of logs to the UI
+/// </summary>
 public class logController : MonoBehaviour
 {
     public Scrollbar scrollBar;
@@ -16,11 +18,7 @@ public class logController : MonoBehaviour
     private const float textLogHight = 100;
 
     public Canvas canvasToUse;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()

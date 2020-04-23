@@ -8,17 +8,15 @@ public enum Filter
 {
     Sample, UDO
 }
+/// <summary>
+/// Controls the main menu fitler
+/// </summary>
 public class RoomLoadSelectionButtonControlScript : MonoBehaviour
 {
     public string RoomToLoad = "SampleScene";
     const string SCENEFOLDERLOCATION = "./UDO/Scenes/";
     public Filter filter = Filter.Sample;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-       
-    }
+  
 
     
     public void LoadRoom()

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// used to move the camera in object build mode
+/// </summary>
 public class cameraRotate : MonoBehaviour
 {
     public Transform RotationPoint;

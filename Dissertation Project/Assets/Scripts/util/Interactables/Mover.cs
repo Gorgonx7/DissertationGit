@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used to constrain the movement of objects within teh scene
+/// </summary>
 public class Mover : MonoBehaviour
 {
     public Vector3 LockVector;
@@ -46,11 +49,7 @@ public class Mover : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
     
-    }
     // adds a position together to give a new position
     public void Move(Vector3 position)
     {
@@ -58,11 +57,7 @@ public class Mover : MonoBehaviour
         Constrain(ref holder);
         gameObject.transform.position += holder;
     }
-    //applies a force to the object to move it
-    public void ApplyForce(Vector3 force)
-    {
-
-    }
+    
     //sets the position of the object
     public void MoveTo(Vector3 moveToPosition)
     {
@@ -95,11 +90,7 @@ public class Mover : MonoBehaviour
         }
         return output;
     }
-    //applies a force that will return the object to the start position
-    private void Return()
-    {
-
-    }
+    
     // limits the movement of the object
     private void Constrain(ref Vector3 PositionToMoveTo)
     {

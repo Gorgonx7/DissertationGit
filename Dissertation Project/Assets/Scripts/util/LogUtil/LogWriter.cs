@@ -8,6 +8,9 @@ using System.Xml;
 
 namespace Assets.LogUtil
 {
+    /// <summary>
+    /// writes the log to the file system in XML
+    /// </summary>
     class LogWriter
     {
         const string LOGDIRECTORY = "./UDO/RawLogs/";

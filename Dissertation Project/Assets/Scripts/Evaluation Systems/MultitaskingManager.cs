@@ -7,6 +7,9 @@ using UnityEngine;
 
 namespace ACE.EvaulationSystem
 {
+    /// <summary>
+    /// The multitasking manager calculates the amount the user has been multitasking within the application
+    /// </summary>
     public class MultitaskingManager : EvaluationManager
     {
         HintManager hintManager;

@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// resets an object  to its original position
+/// </summary>
 public class resetComponent : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)

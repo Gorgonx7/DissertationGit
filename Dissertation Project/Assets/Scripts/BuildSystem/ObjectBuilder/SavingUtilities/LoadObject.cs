@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using SFB;
 using Dummiesman;
+/// <summary>
+/// Used to load an obj and mtl file from the file system and place it in the object builder
+/// </summary>
 public class LoadObject : MonoBehaviour
 {
     public string objString;
     public string matString;
+    public Text RotationTextbox;
     public void loadModel()
     {
         string[] objFileString = StandaloneFileBrowser.OpenFilePanel("Select a model file (obj)", "./", new ExtensionFilter[] { new ExtensionFilter("obj", new string[] { "obj" }) }, false);
@@ -28,9 +33,9 @@ public class LoadObject : MonoBehaviour
         float bottomPos = col.bounds.extents.y;
         Destroy(col);
         loadedObject.transform.position = new Vector3(0, bottomPos, 0);
-        //Destroy(loadedObject.GetComponent<BoxCollider>());
+        
         loadedObject.tag = "EditableObject";
-       // loadedObject.transform.position = Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.width / 2, Camera.main.rect.height / 2, 10.0f) + new Vector3(0,3,0));
+        loadedObject.AddComponent<RotationPreview>().constraintBox = RotationTextbox;
     }
     private void Start()
     {

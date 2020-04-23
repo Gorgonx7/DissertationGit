@@ -2,11 +2,9 @@
 <GameObjectSchema>
   <GameObject GameObjectName="teapot">
     <ComponentList>
-     
       <Component Type="UnityEngine.Rigidbody">
         <UnityEngine.Rigidbody velocity="(0.0, 0.0, 0.0)" angularVelocity="(0.0, 0.0, 0.0)" drag="0" angularDrag="0.05" mass="1" useGravity="True" maxDepenetrationVelocity="1E+32" isKinematic="False" freezeRotation="False" constraints="None" collisionDetectionMode="Discrete" centerOfMass="(-0.1, 1.4, 0.0)" inertiaTensorRotation="(0.0, 0.0, 0.0, 1.0)" inertiaTensor="(1.2, 2.1, 1.9)" detectCollisions="True" position="(0.0, 1.6, 0.0)" rotation="(0.0, 0.0, 0.0, 1.0)" interpolation="None" solverIterations="6" sleepThreshold="0.005" maxAngularVelocity="7" solverVelocityIterations="1" sleepVelocity="0" sleepAngularVelocity="0" useConeFriction="False" solverIterationCount="6" solverVelocityIterationCount="1" tag="Untagged" name="teapot" hideFlags="None" />
       </Component>
-      
       <Component Type="UnityEngine.MeshCollider">
         <UnityEngine.MeshCollider sharedMesh="default (UnityEngine.Mesh)" convex="True" inflateMesh="False" cookingOptions="CookForFasterSimulation, EnableMeshCleaning, WeldColocatedVertices" skinWidth="0" smoothSphereCollisions="True" enabled="True" isTrigger="False" contactOffset="0.01" material=" (UnityEngine.PhysicMaterial)" tag="Untagged" name="teapot" hideFlags="None" />
       </Component>

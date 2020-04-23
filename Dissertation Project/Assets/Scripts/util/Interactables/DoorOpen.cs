@@ -8,6 +8,9 @@ using Assets.LogUtil;
 
 namespace Util.Interactables
 {
+    /// <summary>
+    /// Script used to open doors and cabinates within the scene
+    /// </summary>
     public class DoorOpen : InteractableCollision
     {
       

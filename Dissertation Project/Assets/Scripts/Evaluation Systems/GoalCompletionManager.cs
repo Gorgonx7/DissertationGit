@@ -4,15 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace ACE.EvaulationSystem
 {
+    /// <summary>
+    /// calculates the goal completion rating
+    /// </summary>
     public class GoalCompletionManager : EvaluationManager
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+      
 
-        }
-
-        // Update is called once per frame
+        
         public override void Update()
         {
             currentRating = (int)(5 * GetPercentageOfCompletedTasks());

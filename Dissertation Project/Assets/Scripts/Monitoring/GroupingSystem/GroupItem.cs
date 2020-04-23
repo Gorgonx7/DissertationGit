@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using UnityEngine;
 namespace ACE.Groups
 {
+    /// <summary>
+    /// The group item is responsible for changing a key items membership between different groups
+    /// </summary>
     class GroupItem : MonoBehaviour
     {
         public float StartRadius = 1f;

@@ -1,4 +1,6 @@
 ﻿Shader "Custom/Atmosphere" {
+	/// This shader makes an object glow, it's used for the selection graphical effects
+
 	Properties{
 		_Color("Color", Color) = (1,1,1,1)
 		_Size("Atmosphere Size Multiplier", Range(0,16)) = 4

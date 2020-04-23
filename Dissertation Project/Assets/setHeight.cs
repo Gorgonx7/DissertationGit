@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// sets the height of the user based off of the global variabels
+/// </summary>
 public class setHeight : MonoBehaviour
 {
     // Start is called before the first frame update

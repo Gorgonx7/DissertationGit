@@ -2,7 +2,9 @@
 using System.IO;
 using UnityEngine;
 
-
+/// <summary>
+/// Responsible for saving a screenshot of a room after it has been created
+/// </summary>
 public class ScreenShotController : MonoBehaviour
 {
 

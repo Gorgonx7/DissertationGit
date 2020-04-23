@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 namespace ACE.FileSystem
-{
+{/// <summary>
+/// used to store string conversions to unity types, more could be added but for simplicity only vector3 is used for the demo
+/// </summary>
     public static class StringToUnity
     {
         //Hide Flags

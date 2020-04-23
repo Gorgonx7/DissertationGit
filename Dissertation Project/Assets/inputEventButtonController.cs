@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using ACE.Goals;
 using UnityEngine.UI;
-
+/// <summary>
+/// creates new input events when triggered
+/// </summary>
 public class inputEventButtonController : MonoBehaviour
 {
 

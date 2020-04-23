@@ -10,6 +10,9 @@ using System.Xml.Serialization;
 using UnityEngine;
 namespace ACE.FileSystem
 {
+    /// <summary>
+    /// Class responisble for loading and saving a gameobject directly
+    /// </summary>
    
     [Serializable]
     public class GameObjectSchema : IXmlSerializable

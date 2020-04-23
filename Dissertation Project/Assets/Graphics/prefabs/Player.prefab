@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: /actions/default/in/Grab
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   handType: 0
 --- !u!54 &4594306100014407529
@@ -1890,7 +1890,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PositionRelativeToZero: {x: 0, y: 0, z: 0}
   control:
-    actionPath: /actions/default/in/OpenUI
+    actionPath: /actions/default/in/InteractUI
     needsReinit: 0
   handType: 0
   UIPrefab: {fileID: 3014793414217341257, guid: 953ed970b82b7c04cbe3bbb48d39d4d0,
@@ -2128,7 +2128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   control:
-    actionPath: /actions/default/in/Grab
+    actionPath: /actions/default/in/GrabGrip
     needsReinit: 0
   handType: 0
 --- !u!54 &254504799383535697
@@ -2734,7 +2734,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2781,6 +2781,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 547020159968639734}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: e3847213a159f7945a5a0694fa7fe426,
+        type: 3}
+      propertyPath: m_Name
+      value: VR_simple
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e3847213a159f7945a5a0694fa7fe426,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2850,11 +2855,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.06755892
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: e3847213a159f7945a5a0694fa7fe426,
-        type: 3}
-      propertyPath: m_Name
-      value: VR_simple
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3847213a159f7945a5a0694fa7fe426, type: 3}

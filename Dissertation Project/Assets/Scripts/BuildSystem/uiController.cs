@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+/// <summary>
+/// Controller for the main menu
+/// </summary>
 public class uiController : MonoBehaviour
 {
     public void LoadDesign() {

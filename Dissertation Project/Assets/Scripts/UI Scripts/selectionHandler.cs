@@ -6,7 +6,9 @@ using Valve.VR.InteractionSystem;
 using Assets;
 using static Valve.VR.InteractionSystem.CircularDrive;
 using System;
-
+/// <summary>
+/// legacy UI script when there was a virtual reality UI
+/// </summary>
 public class selectionHandler : MonoBehaviour {
     public SteamVR_Action_Boolean control;
     public SteamVR_Input_Sources handType;
@@ -17,10 +19,7 @@ public class selectionHandler : MonoBehaviour {
 	}
     
    
-	// Update is called once per frame
-	void Update () {
-       
-	}
+	
     private void OnTriggerEnter(Collider other)
     {
         collidedObject = other.gameObject;

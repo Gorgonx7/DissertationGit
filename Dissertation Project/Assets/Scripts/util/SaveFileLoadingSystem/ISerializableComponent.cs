@@ -8,7 +8,9 @@ using System.Xml.Serialization;
 using UnityEngine;
 namespace ACE.FileSystem
 {
-    
+    /// <summary>
+    /// interface to store template classes in a list without knowing thier explicit type
+    /// </summary>
     public interface ISerializableComponent
     {
         Type GetSerializedType();

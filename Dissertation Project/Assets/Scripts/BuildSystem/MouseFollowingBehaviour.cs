@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-//Make an object follow the mouse, also stops following when tabbed out (think a multiuse computer)
+/// Make an object follow the mouse, also stops following when tabbed out (think a multiuse computer)
 public class MouseFollowingBehaviour : MonoBehaviour
 {
     BuildController control;
@@ -19,13 +19,9 @@ public class MouseFollowingBehaviour : MonoBehaviour
         Vector3 mouseVector = Input.mousePosition;
         mouseVector.z += 10;
         Vector3 predictedPosition = Camera.main.ScreenToWorldPoint(mouseVector);
-        //predictedPosition.y += 10;
-      //  predictedPosition.z += 10;
-        //  if(!(mouseVector.x == 0.0f || mouseVector.y == 0 ||  mouseVector.x >= Screen.width - 1 || mouseVector.y >= Screen.height - 1))
-        //{
+       
         gameObject.transform.position = predictedPosition;
 
-        // }
         RaycastHit hit;
         int layerMask = 1 << 8;
         layerMask = ~layerMask;

@@ -6,6 +6,9 @@ using Valve.VR;
 using Valve.VR.InteractionSystem;
 namespace Util.Interactables
 {
+    /// <summary>
+    /// used when a grab triggers an event, like turning a tap on
+    /// </summary>
     public class GraphicsTrigger : InteractableCollision
     {
       

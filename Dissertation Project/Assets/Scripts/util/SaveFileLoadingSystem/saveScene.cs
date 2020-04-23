@@ -1,4 +1,4 @@
-﻿using Assets.SaveFileLoadingSystem;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +6,9 @@ using UnityEngine.UI;
 using ACE.Goals;
 namespace ACE.FileSystem
 {
+    /// <summary>
+    /// saves a scene, all its objects and their positions
+    /// </summary>
     public class saveScene : MonoBehaviour
     {
         BuildController control;
@@ -24,18 +27,18 @@ namespace ACE.FileSystem
         {
             saveText = saveName.GetComponent<Text>().text;
             GameObject[] placedObjects = control.GetPlacedObjects();
-            string[] ObjectNamesToSave = new string[placedObjects.Length + 1];
-            Vector3[] objectLocations = new Vector3[placedObjects.Length + 1];
+            List<string> ObjectNamesToSave = new List<string>();
+            List<Vector3> objectLocations = new List<Vector3>();
             for (int i = 0; i < placedObjects.Length; i++)
             {
                 string holder = placedObjects[i].name;
-                holder = holder.Replace("(Clone)", "");
-                if (holder == "Player Holder")
+                if (GameObject.Find(holder) != null)
                 {
-                    // save the player holder in a certain way
+                    holder = holder.Replace("(Clone)", "");
+
+                    ObjectNamesToSave.Add(holder);
+                    objectLocations.Add(placedObjects[i].transform.position);
                 }
-                ObjectNamesToSave[i] = holder;
-                objectLocations[i] = placedObjects[i].transform.position;
             }
             GameObject floor = GameObject.FindGameObjectWithTag("Floor");
             
@@ -43,7 +46,7 @@ namespace ACE.FileSystem
             SceneCaretaker sceneCaretaker = new SceneCaretaker();
             GoalSaveStruct[] goalsToSave = GoalUIPannel.GetGoalsToSave();
             GoalSaver.SaveGoal(saveText, goalsToSave);
-            sceneCaretaker.SaveScene(ObjectNamesToSave, objectLocations, saveText, saveText);
+            sceneCaretaker.SaveScene(ObjectNamesToSave.ToArray(), objectLocations.ToArray(), saveText, saveText);
             cam.CamCapture(sceneCaretaker.GetLastFileLocation());
         }
     }

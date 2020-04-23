@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Util class for controlling the clock prefab sample asset
+/// </summary>
 public class clockAnimator : MonoBehaviour
 {
     public Transform hours, minutes, seconds;
@@ -13,11 +15,8 @@ public class clockAnimator : MonoBehaviour
         minutesToDegrees = 360f / 60f,
         secondsToDegrees = 360f / 60f;
     public bool analog;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
+    
 
     // Update is called once per frame
     void Update()

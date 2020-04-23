@@ -11,6 +11,9 @@ namespace ACE.Groups {
     {
         logical, random, singleItem
     }
+    /// <summary>
+    /// A group manages it's own items and exisitance
+    /// </summary>
     class Group
     {
         List<GroupItem> m_Items = new List<GroupItem>();
@@ -102,6 +105,9 @@ namespace ACE.Groups {
 
 
         }
+        /// <summary>
+        /// checks if any of the objects within the group no longer belong to this group
+        /// </summary>
         public void CheckGroupMembership()
         {
             cleanItems();
@@ -131,6 +137,10 @@ namespace ACE.Groups {
                 i.groupName = i.m_Group.groupName;
             }
         }
+        /// <summary>
+        /// checks the membership to see if the game objects belong to the same goal, if they do it is a logical group
+        /// </summary>
+        /// <returns></returns>
         public GroupType CheckIfGroupIsLogical()
         {
             if(m_Items.Count == 1)
